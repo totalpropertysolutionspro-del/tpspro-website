@@ -1,0 +1,722 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Commercial & Residential Cleaning, Student Turnover, Renovation & Property Maintenance in Albany, NY | Total Property Solutions Pro</title>
+<meta name="description" content="Total Property Solutions Pro — commercial cleaning services Albany NY, janitorial services, student turnover cleaning, post-construction & renovation cleaning, apartment make-ready services across the Capital Region, NYC, Westchester, NJ, and Florida. Call (518) 948-7156." />
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --green: #258D21;
+    --green-dark: #1B6818;
+    --green-deep: #144C12;
+    --yellow: #FFD700;
+    --yellow-soft: #FFF4B8;
+    --white: #FFFFFF;
+    --ink: #2D2E32;
+    --muted: #6A6C72;
+    --line: #E6E7EA;
+    --gray-50: #F7F8F8;
+    --max: 1280px;
+  }
+
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  html { scroll-behavior: smooth; }
+  body {
+    font-family: 'Inter', system-ui, -apple-system, Segoe UI, sans-serif;
+    color: var(--ink);
+    background: var(--white);
+    line-height: 1.6;
+    -webkit-font-smoothing: antialiased;
+  }
+  img { max-width: 100%; display: block; }
+  a { color: inherit; text-decoration: none; }
+  button { font-family: inherit; cursor: pointer; border: none; background: none; }
+
+  .container { max-width: var(--max); margin: 0 auto; padding: 0 32px; }
+
+  /* TOPBAR */
+  .topbar { background: var(--green-deep); color: #d8efd6; font-size: 13px; font-weight: 500; }
+  .topbar-inner { display: flex; justify-content: space-between; align-items: center; height: 38px; }
+  .topbar-left { display: flex; gap: 24px; }
+  .topbar-left span { display: inline-flex; align-items: center; gap: 8px; }
+  .topbar-left svg { width: 13px; height: 13px; color: var(--yellow); }
+  .topbar-right { display: flex; gap: 18px; align-items: center; flex-wrap: nowrap; }
+  .topbar-right a { opacity: .85; transition: opacity .2s, color .2s; display: inline-flex; align-items: center; gap: 6px; white-space: nowrap; }
+  .topbar-right a:hover { opacity: 1; color: var(--yellow); }
+
+  /* HEADER */
+  .header { position: sticky; top: 0; z-index: 100; background: #fff; border-bottom: 1px solid var(--line); box-shadow: 0 1px 0 rgba(0,0,0,0); transition: box-shadow .25s; }
+  .header.scrolled { box-shadow: 0 8px 24px -16px rgba(0,0,0,0.18); }
+  .header-inner { display: flex; align-items: center; justify-content: space-between; gap: 32px; height: 96px; }
+  .logo { display: flex; align-items: center; gap: 14px; flex-shrink: 0; }
+  .logo img { width: 72px; height: 72px; object-fit: contain; }
+  .logo-text { display: flex; flex-direction: column; line-height: 1.05; }
+  .logo-text strong { font-weight: 800; font-size: 17px; color: var(--green); letter-spacing: -0.01em; }
+  .logo-text small { font-weight: 600; font-size: 10px; letter-spacing: 0.16em; text-transform: uppercase; color: var(--muted); margin-top: 3px; }
+
+  .nav { display: flex; align-items: center; gap: 28px; }
+  .nav a { font-size: 14px; font-weight: 600; color: var(--ink); transition: color .2s; position: relative; padding: 8px 0; }
+  .nav a:hover { color: var(--green); }
+  .nav a.active { color: var(--green); }
+  .nav a::after { content: ""; position: absolute; left: 0; right: 0; bottom: 0; height: 2px; background: var(--green); transform: scaleX(0); transition: transform .25s ease; transform-origin: left; }
+  .nav a:hover::after, .nav a.active::after { transform: scaleX(1); }
+
+  .header-phones { display: flex; flex-direction: column; gap: 6px; }
+  .phone-btn { background: var(--green); color: #fff; font-weight: 700; padding: 10px 16px; border-radius: 8px; font-size: 13px; display: inline-flex; align-items: center; gap: 10px; transition: background .2s, transform .2s; white-space: nowrap; line-height: 1.1; }
+  .phone-btn:hover { background: var(--green-dark); transform: translateY(-1px); }
+  .phone-btn svg { width: 12px; height: 12px; }
+  .phone-btn small { display: block; font-size: 9px; font-weight: 600; letter-spacing: 0.08em; text-transform: uppercase; opacity: 0.85; margin-bottom: 1px; }
+  .phone-btn-content { display: flex; flex-direction: column; line-height: 1.1; align-items: flex-start; white-space: nowrap; }
+
+  /* HERO */
+  .hero { position: relative; color: #fff; overflow: hidden; padding: 140px 0 150px; background: linear-gradient(110deg, rgba(20,76,18,0.92) 0%, rgba(27,104,24,0.82) 50%, rgba(0,0,0,0.55) 100%), url('https://images.unsplash.com/photo-1581578731548-c64695cc6952?auto=format&fit=crop&w=2000&q=80') center/cover; }
+  .hero::after { content: ""; position: absolute; left: 0; right: 0; bottom: 0; height: 8px; background: var(--yellow); }
+  .hero-inner { position: relative; max-width: 880px; }
+  .hero-eyebrow { display: inline-flex; align-items: center; gap: 12px; font-size: 12px; letter-spacing: 0.22em; text-transform: uppercase; color: var(--yellow); font-weight: 700; margin-bottom: 24px; background: rgba(255,215,0,0.1); border: 1px solid rgba(255,215,0,0.35); padding: 8px 14px; border-radius: 999px; }
+  .hero-eyebrow .dot { width: 8px; height: 8px; background: var(--yellow); border-radius: 50%; box-shadow: 0 0 0 4px rgba(255,215,0,0.18); }
+  .hero h1 { font-size: clamp(36px, 4.6vw, 62px); font-weight: 800; line-height: 1.08; letter-spacing: -0.025em; margin-bottom: 24px; text-wrap: balance; }
+  .hero h1 em { font-style: normal; color: var(--yellow); }
+  .hero p.lede { font-size: 18px; line-height: 1.65; color: rgba(255,255,255,0.9); max-width: 700px; margin-bottom: 36px; }
+  .hero-actions { display: flex; gap: 14px; align-items: center; flex-wrap: wrap; }
+  .btn-primary { background: var(--green); color: #fff; font-weight: 700; font-size: 15px; padding: 18px 32px; border-radius: 10px; display: inline-flex; align-items: center; gap: 10px; transition: background .2s, transform .2s, box-shadow .25s; letter-spacing: 0.01em; border: 2px solid var(--green); }
+  .btn-primary:hover { background: var(--yellow); color: var(--green-deep); border-color: var(--yellow); transform: translateY(-2px); box-shadow: 0 14px 30px -10px rgba(255,215,0,0.5); }
+  .btn-primary svg { width: 16px; height: 16px; transition: transform .2s; }
+  .btn-primary:hover svg { transform: translateX(3px); }
+  .btn-outline { color: #fff; font-weight: 700; font-size: 15px; padding: 16px 28px; border-radius: 10px; border: 2px solid rgba(255,255,255,0.4); display: inline-flex; align-items: center; gap: 10px; transition: border-color .2s, background .2s; }
+  .btn-outline:hover { border-color: var(--yellow); background: rgba(255,215,0,0.08); color: var(--yellow); }
+
+  .hero-trust { display: flex; gap: 36px; margin-top: 48px; padding-top: 32px; border-top: 1px solid rgba(255,255,255,0.18); flex-wrap: wrap; }
+  .hero-trust-item { display: flex; align-items: center; gap: 12px; font-size: 13px; color: rgba(255,255,255,0.9); font-weight: 500; }
+  .hero-trust-item svg { width: 18px; height: 18px; color: var(--yellow); flex-shrink: 0; }
+
+  /* INTRO */
+  .intro { padding: 100px 0; background: #fff; text-align: center; }
+  .intro .eyebrow { color: var(--green); font-size: 12px; letter-spacing: 0.28em; text-transform: uppercase; font-weight: 700; margin-bottom: 18px; display: inline-flex; align-items: center; gap: 10px; }
+  .intro .eyebrow::before, .intro .eyebrow::after { content: ""; width: 30px; height: 2px; background: var(--yellow); }
+  .intro h2 { font-size: clamp(32px, 4.2vw, 52px); font-weight: 800; letter-spacing: -0.025em; line-height: 1.05; margin-bottom: 28px; color: var(--ink); }
+  .intro h2 em { font-style: normal; color: var(--green); position: relative; }
+  .intro h2 em::after { content: ""; position: absolute; left: -2px; right: -2px; bottom: 4px; height: 12px; background: var(--yellow); z-index: -1; opacity: 0.55; }
+  .intro p { max-width: 820px; margin: 0 auto; font-size: 17px; color: var(--muted); line-height: 1.75; }
+  .intro p + p { margin-top: 18px; }
+  .intro-stats { display: grid; grid-template-columns: repeat(4, 1fr); gap: 24px; margin-top: 64px; max-width: 920px; margin-left: auto; margin-right: auto; }
+  .intro-stat { padding: 24px 16px; border-left: 3px solid var(--green); text-align: left; }
+  .intro-stat-num { font-size: 36px; font-weight: 800; color: var(--green); letter-spacing: -0.02em; line-height: 1; }
+  .intro-stat-label { font-size: 13px; color: var(--muted); margin-top: 8px; font-weight: 500; line-height: 1.4; }
+
+  /* SERVICES */
+  .services { background: var(--yellow); padding: 110px 0; position: relative; }
+  .services-head { text-align: center; max-width: 760px; margin: 0 auto 64px; }
+  .services-head .eyebrow { background: var(--green); color: #fff; padding: 6px 16px; border-radius: 999px; font-size: 11px; letter-spacing: 0.2em; text-transform: uppercase; font-weight: 700; display: inline-block; margin-bottom: 20px; }
+  .services-head h2 { font-size: clamp(32px, 4.2vw, 52px); font-weight: 800; letter-spacing: -0.025em; line-height: 1.05; color: var(--ink); margin-bottom: 18px; }
+  .services-head p { font-size: 17px; color: rgba(45,46,50,0.75); line-height: 1.6; }
+  .services-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 22px; }
+  .service-card { background: #fff; border-radius: 16px; padding: 32px 26px; transition: transform .3s ease, box-shadow .3s ease; display: flex; flex-direction: column; text-align: center; }
+  .service-card:hover { transform: translateY(-6px); box-shadow: 0 20px 40px -16px rgba(20,76,18,0.25); }
+  .service-icon { width: 76px; height: 76px; border-radius: 50%; background: var(--green); color: #fff; display: flex; align-items: center; justify-content: center; margin: 0 auto 22px; transition: background .25s, transform .25s; position: relative; }
+  .service-icon::before { content: ""; position: absolute; inset: -6px; border-radius: 50%; border: 2px dashed rgba(37,141,33,0.25); transition: transform .5s linear; }
+  .service-card:hover .service-icon { background: var(--green-dark); }
+  .service-card:hover .service-icon::before { transform: rotate(180deg); }
+  .service-icon svg { width: 32px; height: 32px; }
+  .service-card h3 { font-size: 17px; font-weight: 800; letter-spacing: -0.01em; line-height: 1.25; margin-bottom: 10px; color: var(--ink); min-height: 44px; }
+  .service-card p { font-size: 13.5px; color: var(--muted); line-height: 1.55; margin-bottom: 22px; flex: 1; }
+  .service-learn { background: var(--green); color: #fff; font-size: 12px; font-weight: 700; padding: 10px 18px; border-radius: 999px; display: inline-flex; align-items: center; gap: 6px; letter-spacing: 0.04em; text-transform: uppercase; transition: background .2s, gap .2s; align-self: center; }
+  .service-learn:hover { background: var(--ink); gap: 10px; }
+  .service-learn svg { width: 11px; height: 11px; }
+
+  /* SPOTLIGHT */
+  .spotlight { background: #fff; padding: 110px 0; position: relative; overflow: hidden; }
+  .spotlight-inner { display: grid; grid-template-columns: 1.05fr 1fr; gap: 72px; align-items: center; }
+  .spotlight-tag { display: inline-block; background: var(--yellow); color: var(--ink); font-weight: 700; font-size: 12px; letter-spacing: 0.2em; text-transform: uppercase; padding: 6px 14px; border-radius: 4px; margin-bottom: 20px; }
+  .spotlight h2 { font-size: clamp(30px, 3.8vw, 46px); font-weight: 800; letter-spacing: -0.025em; line-height: 1.1; color: var(--ink); margin-bottom: 22px; }
+  .spotlight h2 em { font-style: normal; color: var(--green); }
+  .spotlight p.lead { font-size: 16.5px; color: var(--muted); line-height: 1.7; margin-bottom: 28px; }
+  .spotlight-features { display: grid; grid-template-columns: 1fr 1fr; gap: 16px 28px; margin-bottom: 36px; }
+  .spotlight-feat { display: flex; align-items: flex-start; gap: 12px; font-size: 14.5px; color: var(--ink); font-weight: 500; }
+  .spotlight-feat svg { width: 22px; height: 22px; flex-shrink: 0; color: var(--green); margin-top: 1px; }
+  .spotlight-visual { position: relative; aspect-ratio: 4 / 5; border-radius: 20px; overflow: hidden; background: var(--green-dark) url('https://images.unsplash.com/photo-1567521464027-f127ff144326?auto=format&fit=crop&w=1200&q=80') center/cover; box-shadow: 0 32px 64px -32px rgba(20,76,18,0.4); }
+  .spotlight-visual::before { content: ""; position: absolute; inset: 0; background: linear-gradient(180deg, transparent 50%, rgba(20,76,18,0.55) 100%); }
+  .spotlight-badge { position: absolute; top: 24px; left: 24px; background: var(--yellow); color: var(--ink); padding: 12px 16px; border-radius: 12px; font-weight: 800; font-size: 13px; box-shadow: 0 8px 20px -8px rgba(0,0,0,0.3); }
+  .spotlight-badge strong { display: block; font-size: 22px; line-height: 1; margin-bottom: 4px; color: var(--green-deep); }
+  .spotlight-pull { position: absolute; bottom: 24px; left: 24px; right: 24px; color: #fff; font-size: 14px; font-weight: 600; line-height: 1.4; }
+  .spotlight-pull span { color: var(--yellow); }
+
+  /* WHY US */
+  .why { background: var(--gray-50); padding: 110px 0; }
+  .why-head { text-align: center; max-width: 720px; margin: 0 auto 56px; }
+  .why-head .eyebrow { color: var(--green); font-size: 12px; letter-spacing: 0.22em; text-transform: uppercase; font-weight: 700; margin-bottom: 18px; display: block; }
+  .why-head h2 { font-size: clamp(30px, 4vw, 48px); font-weight: 800; letter-spacing: -0.025em; line-height: 1.05; margin-bottom: 16px; }
+  .why-head h2 em { font-style: normal; color: var(--green); }
+  .why-head p { color: var(--muted); font-size: 16px; }
+  .why-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 18px; }
+  .why-card { background: #fff; border-radius: 16px; padding: 36px 30px; border: 1px solid var(--line); transition: border-color .25s, transform .25s, box-shadow .25s; position: relative; }
+  .why-card:hover { border-color: var(--green); transform: translateY(-3px); box-shadow: 0 16px 30px -16px rgba(37,141,33,0.25); }
+  .why-icon { width: 56px; height: 56px; border-radius: 14px; background: linear-gradient(135deg, var(--green), var(--green-dark)); color: #fff; display: flex; align-items: center; justify-content: center; margin-bottom: 22px; position: relative; }
+  .why-icon::after { content: ""; position: absolute; bottom: -5px; right: -5px; width: 14px; height: 14px; background: var(--yellow); border-radius: 50%; border: 3px solid #fff; }
+  .why-icon svg { width: 26px; height: 26px; }
+  .why-card h3 { font-size: 17px; font-weight: 700; margin-bottom: 8px; color: var(--ink); letter-spacing: -0.01em; }
+  .why-card p { font-size: 14px; color: var(--muted); line-height: 1.6; }
+
+  /* INDUSTRIES */
+  .industries { background: var(--green-deep); color: #fff; padding: 110px 0; position: relative; overflow: hidden; }
+  .industries::before { content: ""; position: absolute; inset: 0; background: radial-gradient(circle at 0% 0%, rgba(255,215,0,0.08), transparent 50%), radial-gradient(circle at 100% 100%, rgba(255,215,0,0.06), transparent 40%); }
+  .industries .container { position: relative; }
+  .industries-head { display: grid; grid-template-columns: 1fr 1fr; gap: 48px; align-items: end; margin-bottom: 56px; }
+  .industries .eyebrow { color: var(--yellow); font-size: 12px; letter-spacing: 0.22em; text-transform: uppercase; font-weight: 700; margin-bottom: 16px; display: inline-block; }
+  .industries h2 { font-size: clamp(30px, 4vw, 48px); font-weight: 800; letter-spacing: -0.025em; line-height: 1.05; color: #fff; }
+  .industries h2 em { font-style: normal; color: var(--yellow); }
+  .industries-head p { color: rgba(255,255,255,0.75); font-size: 16px; line-height: 1.65; }
+  .industries-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 14px; }
+  .industry-card { background: rgba(255,255,255,0.04); border: 1px solid rgba(255,255,255,0.1); border-radius: 14px; padding: 28px 22px; transition: background .25s, border-color .25s, transform .25s; cursor: pointer; }
+  .industry-card:hover { background: rgba(255,215,0,0.08); border-color: var(--yellow); transform: translateY(-3px); }
+  .industry-icon { width: 44px; height: 44px; color: var(--yellow); margin-bottom: 18px; }
+  .industry-card h4 { font-size: 15px; font-weight: 700; color: #fff; letter-spacing: -0.005em; line-height: 1.3; }
+  .industry-card p { font-size: 12.5px; color: rgba(255,255,255,0.6); margin-top: 6px; line-height: 1.5; }
+  .industries-cta { margin-top: 56px; text-align: center; padding: 40px; background: rgba(255,215,0,0.06); border: 1px dashed rgba(255,215,0,0.3); border-radius: 16px; }
+  .industries-cta p { font-size: 17px; color: #fff; margin-bottom: 20px; }
+  .industries-cta strong { color: var(--yellow); }
+
+  /* CLIENTS */
+  .clients { background: #fff; padding: 80px 0; border-bottom: 1px solid var(--line); }
+  .clients-label { text-align: center; font-size: 12px; letter-spacing: 0.24em; text-transform: uppercase; color: var(--muted); font-weight: 700; margin-bottom: 36px; }
+  .clients-label::before, .clients-label::after { content: "—"; color: var(--green); margin: 0 12px; }
+  .clients-row { display: flex; flex-wrap: wrap; align-items: center; justify-content: center; gap: 16px 48px; }
+  .client-name { font-size: 18px; font-weight: 800; color: var(--ink); letter-spacing: -0.01em; position: relative; padding: 0 8px; transition: color .2s; }
+  .client-name:hover { color: var(--green); }
+  .client-name + .client-name::before { content: "•"; color: var(--green); margin-right: 48px; margin-left: -32px; font-size: 22px; pointer-events: none; }
+
+  /* TESTIMONIALS */
+  .testimonials { background: #fff; padding: 110px 0; }
+  .testimonials-head { text-align: center; max-width: 720px; margin: 0 auto 56px; }
+  .testimonials-head .eyebrow { color: var(--green); font-size: 12px; letter-spacing: 0.22em; text-transform: uppercase; font-weight: 700; margin-bottom: 16px; display: block; }
+  .testimonials-head h2 { font-size: clamp(30px, 4vw, 48px); font-weight: 800; letter-spacing: -0.025em; line-height: 1.05; margin-bottom: 14px; }
+  .testimonials-head h2 em { font-style: normal; color: var(--green); }
+  .testimonials-head p { color: var(--muted); font-size: 16px; }
+  .testimonials-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 22px; }
+  .t-card { background: var(--gray-50); border-radius: 18px; padding: 38px 32px; position: relative; display: flex; flex-direction: column; border: 1px solid var(--line); transition: border-color .25s; }
+  .t-card:hover { border-color: var(--green); }
+  .t-quote { position: absolute; top: 18px; right: 26px; font-family: Georgia, serif; font-size: 70px; line-height: 1; color: var(--yellow); pointer-events: none; }
+  .t-stars { color: var(--yellow); display: flex; gap: 2px; margin-bottom: 16px; }
+  .t-stars svg { width: 16px; height: 16px; fill: currentColor; }
+  .t-text { font-size: 15.5px; color: var(--ink); line-height: 1.65; margin-bottom: 26px; flex: 1; }
+  .t-meta { display: flex; align-items: center; gap: 12px; padding-top: 20px; border-top: 1px solid var(--line); }
+  .t-avatar { width: 44px; height: 44px; border-radius: 50%; background: var(--green); color: #fff; display: flex; align-items: center; justify-content: center; font-weight: 700; font-size: 14px; }
+  .t-name { font-size: 14px; font-weight: 700; color: var(--ink); }
+  .t-role { font-size: 12.5px; color: var(--muted); margin-top: 2px; }
+
+  /* CTA STRIP */
+  .cta-strip { background: var(--yellow); padding: 64px 0; position: relative; }
+  .cta-strip-inner { display: flex; align-items: center; justify-content: space-between; gap: 32px; flex-wrap: wrap; }
+  .cta-strip h3 { font-size: clamp(24px, 3vw, 36px); font-weight: 800; letter-spacing: -0.025em; line-height: 1.15; color: var(--ink); max-width: 680px; }
+  .cta-strip h3 em { font-style: normal; color: var(--green); }
+  .cta-strip-buttons { display: flex; gap: 12px; flex-wrap: wrap; }
+
+  /* CONTACT */
+  .contact { background: var(--gray-50); padding: 110px 0; }
+  .contact-grid { display: grid; grid-template-columns: 1fr 1.05fr; gap: 56px; align-items: stretch; }
+  .contact-info { background: var(--green-deep); color: #fff; border-radius: 24px; padding: 48px; position: relative; overflow: hidden; }
+  .contact-info::before { content: ""; position: absolute; top: -40px; right: -40px; width: 200px; height: 200px; background: var(--yellow); border-radius: 50%; opacity: 0.12; }
+  .contact-info::after { content: ""; position: absolute; bottom: -60px; left: -60px; width: 240px; height: 240px; background: var(--green); border-radius: 50%; opacity: 0.4; }
+  .contact-info > * { position: relative; z-index: 1; }
+  .contact-info .eyebrow { color: var(--yellow); font-size: 12px; letter-spacing: 0.22em; text-transform: uppercase; font-weight: 700; margin-bottom: 18px; display: block; }
+  .contact-info h2 { font-size: clamp(28px, 3.6vw, 40px); font-weight: 800; letter-spacing: -0.025em; line-height: 1.1; margin-bottom: 18px; color: #fff; }
+  .contact-info h2 em { font-style: normal; color: var(--yellow); }
+  .contact-info p.lead { color: rgba(255,255,255,0.85); font-size: 15.5px; line-height: 1.65; margin-bottom: 36px; }
+  .contact-list { display: flex; flex-direction: column; gap: 20px; margin-bottom: 36px; }
+  .contact-item { display: flex; gap: 14px; align-items: flex-start; }
+  .contact-icon { flex-shrink: 0; width: 44px; height: 44px; border-radius: 12px; background: rgba(255,215,0,0.15); border: 1px solid rgba(255,215,0,0.3); color: var(--yellow); display: flex; align-items: center; justify-content: center; }
+  .contact-icon svg { width: 18px; height: 18px; }
+  .contact-item-label { font-size: 11px; color: rgba(255,255,255,0.6); letter-spacing: 0.14em; text-transform: uppercase; font-weight: 700; }
+  .contact-item-val { font-size: 15px; color: #fff; font-weight: 600; margin-top: 2px; display: block; }
+  .contact-item-val.phone { font-size: 20px; font-weight: 800; color: var(--yellow); letter-spacing: -0.005em; }
+  .contact-info-foot { padding-top: 28px; border-top: 1px solid rgba(255,255,255,0.15); font-size: 13px; color: rgba(255,255,255,0.7); }
+
+  .contact-form { background: #fff; border-radius: 24px; padding: 0; border: 1px solid var(--line); box-shadow: 0 32px 64px -32px rgba(20,76,18,0.18); overflow: hidden; display: flex; flex-direction: column; }
+  .contact-form-head { background: var(--green); color: #fff; padding: 32px 40px; }
+  .contact-form-head h3 { font-size: 24px; font-weight: 800; letter-spacing: -0.015em; margin-bottom: 6px; }
+  .contact-form-head p { font-size: 14px; color: rgba(255,255,255,0.85); }
+  .contact-form-body { padding: 36px 40px 40px; flex: 1; }
+  .form-row { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; }
+  .form-group { margin-bottom: 18px; }
+  .form-group label { display: block; font-size: 12px; font-weight: 700; color: var(--ink); letter-spacing: 0.04em; margin-bottom: 8px; }
+  .form-group label .req { color: var(--green); }
+  .form-group input, .form-group select, .form-group textarea { width: 100%; padding: 13px 16px; border: 1.5px solid var(--line); border-radius: 10px; font-size: 15px; font-family: inherit; color: var(--ink); background: #fff; transition: border-color .2s, box-shadow .2s; }
+  .form-group input:focus, .form-group select:focus, .form-group textarea:focus { outline: none; border-color: var(--green); box-shadow: 0 0 0 3px rgba(37,141,33,0.15); }
+  .form-group textarea { resize: vertical; min-height: 110px; }
+  .btn-submit { width: 100%; background: var(--green); color: #fff; font-weight: 700; font-size: 15px; padding: 16px; border-radius: 10px; display: inline-flex; align-items: center; justify-content: center; gap: 10px; transition: background .2s, transform .2s, box-shadow .25s; margin-top: 8px; letter-spacing: 0.01em; }
+  .btn-submit:hover { background: var(--green-dark); transform: translateY(-2px); box-shadow: 0 14px 30px -10px rgba(37,141,33,0.5); }
+  .form-disclaimer { text-align: center; font-size: 12.5px; color: var(--muted); margin-top: 14px; }
+
+  /* SEO */
+  .seo { background: #fff; padding: 80px 0; border-top: 1px solid var(--line); }
+  .seo-head { text-align: center; margin-bottom: 32px; }
+  .seo-head h3 { font-size: 22px; font-weight: 800; color: var(--ink); letter-spacing: -0.015em; margin-bottom: 8px; }
+  .seo-head p { font-size: 14px; color: var(--muted); }
+  .seo-tags { display: flex; flex-wrap: wrap; gap: 10px; justify-content: center; max-width: 1080px; margin: 0 auto; }
+  .seo-tag { font-size: 13px; color: var(--green-deep); background: var(--gray-50); border: 1px solid var(--line); padding: 8px 14px; border-radius: 999px; font-weight: 500; transition: background .2s, border-color .2s; }
+  .seo-tag:hover { background: var(--yellow-soft); border-color: var(--yellow); }
+
+  /* FOOTER */
+  footer { background: var(--green-deep); color: rgba(255,255,255,0.7); padding: 80px 0 28px; }
+  .footer-grid { display: grid; grid-template-columns: 1.4fr 1fr 1fr 1fr; gap: 48px; margin-bottom: 56px; }
+  .footer-brand .logo { color: #fff; margin-bottom: 20px; }
+  .footer-brand .logo img { width: 80px; height: 80px; }
+  .footer-brand .logo strong { color: #fff; }
+  .footer-brand .logo small { color: var(--yellow); }
+  .footer-brand p { font-size: 14px; line-height: 1.65; color: rgba(255,255,255,0.7); margin-bottom: 24px; max-width: 340px; }
+  .footer-phone-card { display: inline-flex; flex-direction: column; gap: 4px; background: rgba(255,255,255,0.06); border: 1px solid rgba(255,215,0,0.2); padding: 14px 20px; border-radius: 12px; margin-bottom: 24px; }
+  .footer-phone-card .label { font-size: 11px; letter-spacing: 0.14em; text-transform: uppercase; color: var(--yellow); font-weight: 700; }
+  .footer-phone-card a { color: #fff; font-size: 18px; font-weight: 800; }
+  .socials { display: flex; gap: 10px; }
+  .social-btn { width: 38px; height: 38px; border-radius: 10px; border: 1px solid rgba(255,255,255,0.18); color: #fff; display: flex; align-items: center; justify-content: center; transition: background .2s, color .2s, border-color .2s; }
+  .social-btn:hover { background: var(--yellow); color: var(--green-deep); border-color: var(--yellow); }
+  .social-btn svg { width: 16px; height: 16px; }
+  .footer-col h5 { color: #fff; font-size: 13px; font-weight: 800; letter-spacing: 0.12em; text-transform: uppercase; margin-bottom: 20px; }
+  .footer-col ul { list-style: none; display: flex; flex-direction: column; gap: 12px; }
+  .footer-col a { font-size: 14px; color: rgba(255,255,255,0.7); transition: color .2s; }
+  .footer-col a:hover { color: var(--yellow); }
+  .footer-bottom { padding-top: 28px; border-top: 1px solid rgba(255,255,255,0.12); display: flex; justify-content: space-between; align-items: center; font-size: 13px; color: rgba(255,255,255,0.55); flex-wrap: wrap; gap: 16px; }
+  .footer-bottom-links { display: flex; gap: 24px; }
+  .footer-bottom-links a:hover { color: var(--yellow); }
+
+  /* RESPONSIVE */
+  @media (max-width: 1180px) {
+    .nav { gap: 20px; }
+    .nav a { font-size: 13px; }
+    .phone-btn small { display: none; }
+    .phone-btn { padding: 10px 14px; font-size: 13px; }
+  }
+  @media (max-width: 960px) {
+    .header-inner { height: auto; padding: 16px 0; flex-wrap: wrap; }
+    .nav { display: none; }
+    .header-phones { flex-direction: row; }
+    .services-grid { grid-template-columns: repeat(2, 1fr); }
+    .why-grid { grid-template-columns: repeat(2, 1fr); }
+    .industries-grid { grid-template-columns: repeat(2, 1fr); }
+    .industries-head { grid-template-columns: 1fr; }
+    .testimonials-grid { grid-template-columns: 1fr; }
+    .contact-grid { grid-template-columns: 1fr; }
+    .footer-grid { grid-template-columns: 1fr 1fr; }
+    .spotlight-inner { grid-template-columns: 1fr; }
+    .intro-stats { grid-template-columns: repeat(2, 1fr); }
+  }
+  @media (max-width: 640px) {
+    .container { padding: 0 20px; }
+    section { padding: 80px 0; }
+    .hero { padding: 100px 0 100px; }
+    .header-phones { flex-direction: column; width: 100%; }
+    .phone-btn { width: 100%; }
+    .services-grid, .why-grid, .industries-grid { grid-template-columns: 1fr; }
+    .form-row { grid-template-columns: 1fr; }
+    .contact-info, .contact-form-body { padding: 32px 24px; }
+    .contact-form-head { padding: 24px; }
+    .footer-grid { grid-template-columns: 1fr; gap: 36px; }
+    .clients-row { gap: 12px 24px; }
+    .client-name + .client-name::before { display: none; }
+    .spotlight-features { grid-template-columns: 1fr; }
+  }
+</style>
+</head>
+<body>
+
+<!-- TOPBAR -->
+<div class="topbar">
+  <div class="container topbar-inner">
+    <div class="topbar-left">
+      <span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg> Open 24 Hours · Mon–Sun</span>
+      <span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg> Albany, NY · NYC · Westchester · NJ · Florida</span>
+    </div>
+    <div class="topbar-right">
+      <a href="tel:5189487156"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg> (518) 948-7156</a>
+      <a href="tel:8007917845"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg> Toll-Free (800) 791-7845</a>
+    </div>
+  </div>
+</div>
+
+<!-- HEADER -->
+<header class="header" id="header">
+  <div class="container header-inner">
+    <a href="#" class="logo">
+      <img src="assets/logo.png" alt="Total Property Solutions Pro LLC" />
+      <span class="logo-text">
+        <strong>Total Property Solutions Pro</strong>
+        <small>Albany, NY · Capital Region</small>
+      </span>
+    </a>
+    <nav class="nav">
+      <a href="#" class="active">Home</a>
+      <a href="#services">Services</a>
+      <a href="#service-area">Service Area</a>
+      <a href="#industries">Industries</a>
+      <a href="#staffing">Staffing of America</a>
+      <a href="#faq">FAQ</a>
+      <a href="#contact">Contact</a>
+    </nav>
+    <div class="header-phones">
+      <a href="tel:5189487156" class="phone-btn">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+        <span class="phone-btn-content"><small>Call Local</small>(518) 948-7156</span>
+      </a>
+      <a href="tel:8007917845" class="phone-btn">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+        <span class="phone-btn-content"><small>Toll-Free</small>(800) 791-7845</span>
+      </a>
+    </div>
+  </div>
+</header>
+
+<!-- HERO -->
+<section class="hero">
+  <div class="container hero-inner">
+    <span class="hero-eyebrow"><span class="dot"></span> Trusted Across the Capital Region</span>
+    <h1>Commercial &amp; Residential Cleaning, Student Turnover, Renovation &amp; <em>Property Maintenance</em> in Albany, NY</h1>
+    <p class="lede">From recurring janitorial routes to 200-unit student turnovers, Total Property Solutions Pro delivers fast, insured, top-to-bottom cleaning across Albany, Troy, Schenectady, Cohoes, Clifton Park, the Capital Region, NYC, Westchester, NJ, and Florida.</p>
+    <div class="hero-actions">
+      <a href="#contact" class="btn-primary">Get A Free Quote <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg></a>
+      <a href="tel:5189487156" class="btn-outline"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg> Call (518) 948-7156</a>
+    </div>
+    <div class="hero-trust">
+      <div class="hero-trust-item"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg> Fully insured &amp; bonded</div>
+      <div class="hero-trust-item"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg> Available 24/7, 365 days</div>
+      <div class="hero-trust-item"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg> 100–200+ unit turnovers</div>
+      <div class="hero-trust-item"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg> Property-manager specialists</div>
+    </div>
+  </div>
+</section>
+
+<!-- INTRO -->
+<section class="intro">
+  <div class="container">
+    <span class="eyebrow">About TPS Pro</span>
+    <h2>Cleaning <em>Made Easy</em></h2>
+    <p>Total Property Solutions Pro is the Capital Region's go-to partner for <strong>commercial cleaning services in Albany NY</strong>, janitorial routes, student housing turnover cleaning, post-construction cleaning, and renovation cleanups. We serve property managers, contractors, and operators across Albany, Troy, Schenectady, Cohoes, and Clifton Park — with crews extending into NYC, Westchester County, New Jersey, and Florida.</p>
+    <p>Whether you need <strong>tenant turnover cleaning</strong> for a single unit, recurring janitorial coverage for a corporate office, or a deep-clean army for a 200-unit student housing flip, our trained, uniformed crews show up on time and finish to spec — every visit, every site.</p>
+    <div class="intro-stats">
+      <div class="intro-stat"><div class="intro-stat-num">200+</div><div class="intro-stat-label">Student units turned per peak season</div></div>
+      <div class="intro-stat"><div class="intro-stat-num">24/7</div><div class="intro-stat-label">Crews on-call, every day of the year</div></div>
+      <div class="intro-stat"><div class="intro-stat-num">5</div><div class="intro-stat-label">States served — NY, NJ &amp; FL</div></div>
+      <div class="intro-stat"><div class="intro-stat-num">8</div><div class="intro-stat-label">Specialty service lines under one roof</div></div>
+    </div>
+  </div>
+</section>
+
+<!-- SERVICES -->
+<section class="services" id="services">
+  <div class="container">
+    <div class="services-head">
+      <span class="eyebrow">What We Do</span>
+      <h2>Commercial &amp; Residential Cleaning Services</h2>
+      <p>Eight specialty service lines — from janitorial services Albany NY to post-construction cleaning and apartment make-ready services. One accountable team, one number to call.</p>
+    </div>
+    <div class="services-grid">
+      <div class="service-card"><div class="service-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 21h18"/><path d="M5 21V7l7-4 7 4v14"/><rect x="9" y="11" width="2" height="3"/><rect x="13" y="11" width="2" height="3"/><rect x="9" y="16" width="2" height="3"/><rect x="13" y="16" width="2" height="3"/></svg></div><h3>Commercial Janitorial Services</h3><p>Recurring office and facility cleaning programs scheduled around your hours, your standards, and your team.</p><a href="#contact" class="service-learn">Learn More <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg></a></div>
+      <div class="service-card"><div class="service-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2l-2 2-7 7v5h5l7-7 2-2-5-5z"/><path d="M11 5l5 5"/></svg></div><h3>Renovations &amp; Renovation Cleaning</h3><p>Mid- and post-renovation cleanup that gets sites tenant-ready, guest-ready, or inspection-ready fast.</p><a href="#contact" class="service-learn">Learn More <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg></a></div>
+      <div class="service-card"><div class="service-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M2 22h20"/><path d="M12 2L4 8v14h16V8l-8-6z"/><path d="M9 14h6"/></svg></div><h3>Post-Construction Cleaning</h3><p>Drywall dust, debris, and final-polish punchouts handled before your handoff or grand opening.</p><a href="#contact" class="service-learn">Learn More <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg></a></div>
+      <div class="service-card"><div class="service-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 10v6M2 10l10-5 10 5-10 5z"/><path d="M6 12v5c3 3 9 3 12 0v-5"/></svg></div><h3>Student Turnover Cleaning</h3><p>Campus-area apartment deep cleans on tight academic deadlines — at scale, building by building.</p><a href="#contact" class="service-learn">Learn More <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg></a></div>
+      <div class="service-card"><div class="service-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"/><polyline points="3.27 6.96 12 12.01 20.73 6.96"/><line x1="12" y1="22.08" x2="12" y2="12"/></svg></div><h3>Tenant / Make-Ready Turnover</h3><p>Apartment make-ready services done same- or next-day so listings go live and revenue keeps moving.</p><a href="#contact" class="service-learn">Learn More <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg></a></div>
+      <div class="service-card"><div class="service-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="7" height="7"/><rect x="14" y="3" width="7" height="7"/><rect x="3" y="14" width="7" height="7"/><rect x="14" y="14" width="7" height="7"/></svg></div><h3>Floor Care (VCT, LVT, Tile, Carpet)</h3><p>Strip, wax, buff, deep extract, and carpet cleaning services. Floors that earn second looks.</p><a href="#contact" class="service-learn">Learn More <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg></a></div>
+      <div class="service-card"><div class="service-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg></div><h3>Airbnb &amp; Short-Term Rental Cleaning</h3><p>Guest-ready turnovers, linen resets, restocks, and minor repairs — protect your rating and reviews.</p><a href="#contact" class="service-learn">Learn More <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg></a></div>
+      <div class="service-card"><div class="service-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="3"/><path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 0 1-2.83 2.83l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-4 0v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 0 1-2.83-2.83l.06-.06a1.65 1.65 0 0 0 .33-1.82 1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1 0-4h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 0 1 2.83-2.83l.06.06a1.65 1.65 0 0 0 1.82.33H9a1.65 1.65 0 0 0 1-1.51V3a2 2 0 0 1 4 0v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 0 1 2.83 2.83l-.06.06a1.65 1.65 0 0 0-.33 1.82V9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 0 4h-.09a1.65 1.65 0 0 0-1.51 1z"/></svg></div><h3>Facility Maintenance</h3><p>Property maintenance services Albany — light handyman, restocks, exterior touches, all in one contract.</p><a href="#contact" class="service-learn">Learn More <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg></a></div>
+    </div>
+  </div>
+</section>
+
+<!-- SPOTLIGHT -->
+<section class="spotlight">
+  <div class="container spotlight-inner">
+    <div>
+      <span class="spotlight-tag">★ Peak-Season Specialty</span>
+      <h2>Student Housing Turnover Cleaning, <em>Done at Scale</em></h2>
+      <p class="lead">Every May through August, our crews flip 100 to 200+ student units across the Capital Region — full apartment deep cleans, bathroom and kitchen sanitization, carpet cleaning and patching, paint touch-ups, and move-in-ready inspections. We're built for the volume and the deadline.</p>
+      <div class="spotlight-features">
+        <div class="spotlight-feat"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg> Full apartment deep cleaning</div>
+        <div class="spotlight-feat"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg> Bathroom &amp; kitchen sanitization</div>
+        <div class="spotlight-feat"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg> Carpet cleaning &amp; patching</div>
+        <div class="spotlight-feat"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg> Paint touch-ups</div>
+        <div class="spotlight-feat"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg> Move-in-ready inspections</div>
+        <div class="spotlight-feat"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg> Multi-unit, multi-day scheduling</div>
+      </div>
+      <a href="#contact" class="btn-primary">Plan Your Turnover <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg></a>
+    </div>
+    <div class="spotlight-visual">
+      <div class="spotlight-badge"><strong>200+</strong>units / season</div>
+      <div class="spotlight-pull"><span>Student housing turnover cleaning</span><br/>for property managers across Albany, Troy &amp; the Capital Region.</div>
+    </div>
+  </div>
+</section>
+
+<!-- WHY US -->
+<section class="why" id="why">
+  <div class="container">
+    <div class="why-head">
+      <span class="eyebrow">Why Choose Us</span>
+      <h2>Built for property managers, <em>trusted by operators</em></h2>
+      <p>Six reasons facility managers, owners, and contractors keep TPS Pro on speed-dial.</p>
+    </div>
+    <div class="why-grid">
+      <div class="why-card"><div class="why-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg></div><h3>24/7 Availability</h3><p>Open Monday through Sunday, around the clock. Emergencies don't wait — and neither do we.</p></div>
+      <div class="why-card"><div class="why-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/><polyline points="9 12 11 14 15 10"/></svg></div><h3>Fully Insured</h3><p>Comprehensive liability coverage and bonded crews — paperwork ready before your first walkthrough.</p></div>
+      <div class="why-card"><div class="why-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M11 20A7 7 0 0 1 9.8 6.1C15.5 5 17 4.48 19 2c1 2 2 4.18 2 8 0 5.5-4.78 10-10 10z"/><path d="M2 21c0-3 1.85-5.36 5.08-6"/></svg></div><h3>Eco-Friendly</h3><p>Green-seal certified products and low-impact processes safe for kids, pets, and sensitive spaces.</p></div>
+      <div class="why-card"><div class="why-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"/></svg></div><h3>Fast Turnaround</h3><p>Same-day and next-day service for tenant turnover cleaning, move-out cleaning, and renovation cleanups.</p></div>
+      <div class="why-card"><div class="why-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 21h18"/><path d="M5 21V7l7-4 7 4v14"/><rect x="9" y="9" width="2" height="3"/><rect x="13" y="9" width="2" height="3"/><rect x="9" y="14" width="2" height="3"/><rect x="13" y="14" width="2" height="3"/></svg></div><h3>Property Manager Specialists</h3><p>Multi-unit scheduling, work-order workflows, and one accountable contact for every site in the portfolio.</p></div>
+      <div class="why-card"><div class="why-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg></div><h3>Trained Crews</h3><p>Vetted, uniformed, OSHA-aware teams led by experienced supervisors — same faces, every visit.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- INDUSTRIES -->
+<section class="industries" id="industries">
+  <div class="container">
+    <div class="industries-head">
+      <div>
+        <span class="eyebrow">Industries We Serve</span>
+        <h2>The spaces that <em>don't stop</em></h2>
+      </div>
+      <p>Whatever the building, whatever the use case — from student housing to medical clinics to short-term rentals — our crews know the playbook. We're cleaning services near me Albany NY for the people who manage real estate at scale.</p>
+    </div>
+    <div class="industries-grid">
+      <div class="industry-card"><svg class="industry-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M2 22h20"/><path d="M4 22V8h16v14"/><path d="M9 22V12h6v10"/></svg><h4>Student Housing</h4><p>Campus &amp; off-campus turns</p></div>
+      <div class="industry-card"><svg class="industry-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M3 21V8l9-5 9 5v13"/><path d="M9 21v-6h6v6"/></svg><h4>Multi-Family / Apartments</h4><p>Make-ready &amp; common areas</p></div>
+      <div class="industry-card"><svg class="industry-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="18" height="18" rx="2"/><path d="M9 3v18M3 9h18M3 15h18"/></svg><h4>Office &amp; Corporate</h4><p>Class A &amp; B janitorial</p></div>
+      <div class="industry-card"><svg class="industry-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M2 9h20l-2 11H4z"/><path d="M8 9V5a4 4 0 0 1 8 0v4"/></svg><h4>Retail &amp; Storefront</h4><p>Shops, lobbies, hospitality</p></div>
+      <div class="industry-card"><svg class="industry-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2v8M8 6h8M5 22h14M5 22V11l7-4 7 4v11"/></svg><h4>Medical Facilities</h4><p>Clinics, dental, urgent care</p></div>
+      <div class="industry-card"><svg class="industry-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M2 22h20"/><path d="M4 22V10l8-6 8 6v12"/><path d="M9 22V14h6v8"/></svg><h4>Construction &amp; Contractors</h4><p>Post-construction punchout</p></div>
+      <div class="industry-card"><svg class="industry-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><path d="M9 22V12h6v10"/></svg><h4>Airbnb / Short-Term Rentals</h4><p>Turnovers &amp; restocks</p></div>
+      <div class="industry-card"><svg class="industry-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M2 20h20"/><path d="M5 20V9l7-5 7 5v11"/><circle cx="12" cy="13" r="2"/></svg><h4>Property Management Co.</h4><p>Full-portfolio coverage</p></div>
+    </div>
+    <div class="industries-cta" id="service-area">
+      <p>Service area: <strong>Albany · Troy · Schenectady · Cohoes · Clifton Park · Capital Region · NYC · Westchester County · NJ · Florida</strong></p>
+      <a href="#contact" class="btn-primary">Request a Free Quote <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg></a>
+    </div>
+  </div>
+</section>
+
+<!-- CLIENTS -->
+<section class="clients">
+  <div class="container">
+    <div class="clients-label">Trusted By Leading Properties &amp; Operators</div>
+    <div class="clients-row">
+      <span class="client-name">Amicus Properties</span>
+      <span class="client-name">Block 75 North Point</span>
+      <span class="client-name">Oak Brook</span>
+      <span class="client-name">Fox Run</span>
+      <span class="client-name">Hillside Jerusalem</span>
+    </div>
+  </div>
+</section>
+
+<!-- TESTIMONIALS -->
+<section class="testimonials" id="testimonials">
+  <div class="container">
+    <div class="testimonials-head">
+      <span class="eyebrow">Client Reviews</span>
+      <h2>The kind of feedback <em>we work for</em></h2>
+      <p>Property managers, contractors, and operators on what it's like to work with TPS Pro.</p>
+    </div>
+    <div class="testimonials-grid">
+      <article class="t-card">
+        <span class="t-quote">"</span>
+        <div class="t-stars">
+          <svg viewBox="0 0 24 24"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+          <svg viewBox="0 0 24 24"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+          <svg viewBox="0 0 24 24"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+          <svg viewBox="0 0 24 24"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+          <svg viewBox="0 0 24 24"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+        </div>
+        <p class="t-text">TPS Pro turned around 32 student units in under a week — every single one passed move-in inspection on the first walk. That never happens. They're our default vendor now.</p>
+        <div class="t-meta"><div class="t-avatar">MR</div><div><div class="t-name">Marcus Reyes</div><div class="t-role">Portfolio Director, Multifamily Group</div></div></div>
+      </article>
+      <article class="t-card">
+        <span class="t-quote">"</span>
+        <div class="t-stars">
+          <svg viewBox="0 0 24 24"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+          <svg viewBox="0 0 24 24"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+          <svg viewBox="0 0 24 24"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+          <svg viewBox="0 0 24 24"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+          <svg viewBox="0 0 24 24"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+        </div>
+        <p class="t-text">Post-construction punchout on a 40,000 sq ft buildout — done overnight, no detail missed. The GC noticed before the client did. That's the bar for post-construction cleaning Albany NY.</p>
+        <div class="t-meta"><div class="t-avatar">DC</div><div><div class="t-name">Danielle Cho</div><div class="t-role">Project Manager, Northstar Builders</div></div></div>
+      </article>
+      <article class="t-card">
+        <span class="t-quote">"</span>
+        <div class="t-stars">
+          <svg viewBox="0 0 24 24"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+          <svg viewBox="0 0 24 24"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+          <svg viewBox="0 0 24 24"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+          <svg viewBox="0 0 24 24"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+          <svg viewBox="0 0 24 24"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+        </div>
+        <p class="t-text">We manage a dozen short-term rentals across the Capital Region. TPS Pro handles every turnover, every linen, every restock. Our 5-star ratings are theirs as much as ours.</p>
+        <div class="t-meta"><div class="t-avatar">SP</div><div><div class="t-name">Sarah Patel</div><div class="t-role">Owner, Hudson Stay Rentals</div></div></div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- CTA STRIP -->
+<section class="cta-strip">
+  <div class="container cta-strip-inner">
+    <h3>Need a quote on commercial cleaning, student turnover, or <em>renovation cleanup?</em></h3>
+    <div class="cta-strip-buttons">
+      <a href="tel:5189487156" class="btn-primary">Call (518) 948-7156</a>
+      <a href="tel:8007917845" class="btn-outline" style="color: var(--green-deep); border-color: var(--green-deep);">Toll-Free (800) 791-7845</a>
+    </div>
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section class="contact" id="contact">
+  <div class="container contact-grid">
+    <aside class="contact-info">
+      <span class="eyebrow">Contact TPS Pro</span>
+      <h2>Let's talk about <em>your property</em></h2>
+      <p class="lead">Tell us about the space, the timeline, and the scope. We respond within one business day with a tailored quote — or sooner if you're in a rush.</p>
+      <div class="contact-list">
+        <div class="contact-item"><div class="contact-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg></div><div><div class="contact-item-label">Local</div><a href="tel:5189487156" class="contact-item-val phone">(518) 948-7156</a></div></div>
+        <div class="contact-item"><div class="contact-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg></div><div><div class="contact-item-label">Toll-Free</div><a href="tel:8007917845" class="contact-item-val phone">(800) 791-7845</a></div></div>
+        <div class="contact-item"><div class="contact-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg></div><div><div class="contact-item-label">Hours</div><span class="contact-item-val">Mon–Sun · Open 24 Hours</span></div></div>
+        <div class="contact-item"><div class="contact-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg></div><div><div class="contact-item-label">Service Area</div><span class="contact-item-val">Albany · Troy · Schenectady · NYC · NJ · FL</span></div></div>
+      </div>
+      <div class="contact-info-foot">Commercial cleaning companies near me — TPS Pro is fully insured, bonded, and 24/7 across the Capital Region and beyond.</div>
+    </aside>
+
+    <form class="contact-form" onsubmit="event.preventDefault(); alert('Thanks — we will be in touch within one business day.');">
+      <div class="contact-form-head">
+        <h3>Get a Free Quote</h3>
+        <p>Same-day response · No obligation · No spam</p>
+      </div>
+      <div class="contact-form-body">
+        <div class="form-row">
+          <div class="form-group"><label for="name">Full Name <span class="req">*</span></label><input id="name" type="text" placeholder="Jane Smith" required /></div>
+          <div class="form-group"><label for="phone">Phone <span class="req">*</span></label><input id="phone" type="tel" placeholder="(518) 555-0100" required /></div>
+        </div>
+        <div class="form-group"><label for="email">Email <span class="req">*</span></label><input id="email" type="email" placeholder="jane@company.com" required /></div>
+        <div class="form-row">
+          <div class="form-group"><label for="property">Property Type</label><select id="property"><option value="">Select…</option><option>Student Housing</option><option>Multi-Family / Apartment</option><option>Office / Corporate</option><option>Retail / Storefront</option><option>Medical Facility</option><option>Construction Site</option><option>Airbnb / Short-Term Rental</option><option>Other</option></select></div>
+          <div class="form-group"><label for="service">Service Needed</label><select id="service"><option value="">Select…</option><option>Commercial Janitorial</option><option>Renovation Cleaning</option><option>Post-Construction Cleaning</option><option>Student Turnover Cleaning</option><option>Tenant / Make-Ready Turnover</option><option>Floor Care / Carpet Cleaning</option><option>Airbnb &amp; Short-Term Rental</option><option>Facility Maintenance</option></select></div>
+        </div>
+        <div class="form-group"><label for="message">Project Details</label><textarea id="message" placeholder="Square footage, unit count, timeline, special requirements…"></textarea></div>
+        <button type="submit" class="btn-submit">Request My Free Quote <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg></button>
+        <p class="form-disclaimer">We respond within one business day. Available 24/7 for urgent jobs.</p>
+      </div>
+    </form>
+  </div>
+</section>
+
+<!-- SEO -->
+<section class="seo">
+  <div class="container">
+    <div class="seo-head">
+      <h3>Cleaning services we provide across the Capital Region &amp; beyond</h3>
+      <p>Local search-friendly summary of where TPS Pro shows up</p>
+    </div>
+    <div class="seo-tags">
+      <span class="seo-tag">commercial cleaning services Albany NY</span>
+      <span class="seo-tag">janitorial services Albany NY</span>
+      <span class="seo-tag">student turnover cleaning Albany NY</span>
+      <span class="seo-tag">student housing turnover cleaning</span>
+      <span class="seo-tag">post-construction cleaning Albany NY</span>
+      <span class="seo-tag">renovation cleaning services</span>
+      <span class="seo-tag">tenant turnover cleaning</span>
+      <span class="seo-tag">move-out cleaning services</span>
+      <span class="seo-tag">apartment make-ready services</span>
+      <span class="seo-tag">property maintenance services Albany</span>
+      <span class="seo-tag">carpet cleaning services</span>
+      <span class="seo-tag">commercial cleaning companies near me</span>
+      <span class="seo-tag">cleaning services near me Albany NY</span>
+      <span class="seo-tag">Troy NY cleaning</span>
+      <span class="seo-tag">Schenectady NY cleaning</span>
+      <span class="seo-tag">Clifton Park cleaning</span>
+      <span class="seo-tag">Cohoes NY cleaning</span>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <a href="#" class="logo">
+          <img src="assets/logo.png" alt="Total Property Solutions Pro LLC" />
+          <span class="logo-text">
+            <strong>Total Property Solutions Pro</strong>
+            <small>LLC · Albany, NY</small>
+          </span>
+        </a>
+        <p>Premium commercial &amp; residential cleaning, student turnover, post-construction, and property maintenance services. Insured, bonded, and on-call 24/7 across NY, NJ, and Florida.</p>
+        <div class="footer-phone-card">
+          <span class="label">Call us 24/7</span>
+          <a href="tel:5189487156">(518) 948-7156</a>
+          <a href="tel:8007917845" style="font-size: 14px; opacity: 0.85; font-weight: 600;">Toll-Free (800) 791-7845</a>
+        </div>
+        <div class="socials">
+          <a href="#" class="social-btn" aria-label="Facebook"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M22 12.06C22 6.5 17.52 2 12 2S2 6.5 2 12.06c0 5 3.66 9.13 8.44 9.88v-7H7.9v-2.88h2.54V9.85c0-2.5 1.49-3.89 3.77-3.89 1.09 0 2.24.2 2.24.2v2.46h-1.26c-1.24 0-1.63.77-1.63 1.56v1.88h2.78l-.45 2.88h-2.33v7C18.34 21.19 22 17.06 22 12.06z"/></svg></a>
+          <a href="#" class="social-btn" aria-label="Instagram"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="2" width="20" height="20" rx="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg></a>
+          <a href="#" class="social-btn" aria-label="LinkedIn"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M20.45 20.45h-3.55v-5.57c0-1.33-.03-3.04-1.85-3.04-1.85 0-2.13 1.45-2.13 2.94v5.67H9.36V9h3.41v1.56h.05c.48-.9 1.64-1.85 3.37-1.85 3.6 0 4.27 2.37 4.27 5.45v6.29zM5.34 7.43a2.06 2.06 0 1 1 0-4.12 2.06 2.06 0 0 1 0 4.12zm1.78 13.02H3.56V9h3.56v11.45z"/></svg></a>
+        </div>
+      </div>
+      <div class="footer-col">
+        <h5>Services</h5>
+        <ul>
+          <li><a href="#services">Commercial Janitorial</a></li>
+          <li><a href="#services">Renovation Cleaning</a></li>
+          <li><a href="#services">Post-Construction</a></li>
+          <li><a href="#services">Student Turnover</a></li>
+          <li><a href="#services">Make-Ready Turnover</a></li>
+          <li><a href="#services">Floor &amp; Carpet Care</a></li>
+          <li><a href="#services">Airbnb Cleaning</a></li>
+          <li><a href="#services">Facility Maintenance</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h5>Service Area</h5>
+        <ul>
+          <li><a href="#">Albany, NY</a></li>
+          <li><a href="#">Troy, NY</a></li>
+          <li><a href="#">Schenectady, NY</a></li>
+          <li><a href="#">Cohoes, NY</a></li>
+          <li><a href="#">Clifton Park, NY</a></li>
+          <li><a href="#">New York City</a></li>
+          <li><a href="#">Westchester County</a></li>
+          <li><a href="#">New Jersey · Florida</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h5>Company</h5>
+        <ul>
+          <li><a href="#why">Why Choose Us</a></li>
+          <li><a href="#industries">Industries</a></li>
+          <li><a href="#testimonials">Reviews</a></li>
+          <li><a href="#staffing">Staffing of America</a></li>
+          <li><a href="#faq">FAQ</a></li>
+          <li><a href="#contact">Get a Free Quote</a></li>
+          <li><a href="#">Careers</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© 2026 Total Property Solutions Pro LLC. All rights reserved.</span>
+      <div class="footer-bottom-links">
+        <a href="#">Privacy</a>
+        <a href="#">Terms</a>
+        <a href="#">Sitemap</a>
+        <a href="#">Accessibility</a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<script>
+  const header = document.getElementById('header');
+  window.addEventListener('scroll', () => {
+    if (window.scrollY > 12) header.classList.add('scrolled');
+    else header.classList.remove('scrolled');
+  }, { passive: true });
+</script>
+
+</body>
