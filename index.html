@@ -71,6 +71,10 @@
   .phone-btn svg { width: 12px; height: 12px; }
   .phone-btn small { display: block; font-size: 9px; font-weight: 600; letter-spacing: 0.08em; text-transform: uppercase; opacity: 0.85; margin-bottom: 1px; }
   .phone-btn-content { display: flex; flex-direction: column; line-height: 1.1; align-items: flex-start; white-space: nowrap; }
+  .quote-btn-nav { display: inline-flex; align-items: center; gap: 8px; background: var(--green); color: #fff; font-weight: 700; font-size: 14px; padding: 11px 20px; border-radius: 8px; white-space: nowrap; transition: background .2s, transform .2s, box-shadow .2s; letter-spacing: 0.01em; flex-shrink: 0; }
+  .quote-btn-nav:hover { background: var(--green-dark, #1a6e17); transform: translateY(-1px); box-shadow: 0 8px 20px -6px rgba(37,141,33,0.45); }
+  .quote-btn-nav svg { transition: transform .2s; }
+  .quote-btn-nav:hover svg { transform: translateX(3px); }
 
   /* HERO */
   .hero { position: relative; color: #fff; overflow: hidden; padding: 140px 0 150px; background: linear-gradient(110deg, rgba(20,76,18,0.92) 0%, rgba(27,104,24,0.82) 50%, rgba(0,0,0,0.55) 100%), url('https://images.unsplash.com/photo-1581578731548-c64695cc6952?auto=format&fit=crop&w=2000&q=80') center/cover; }
@@ -292,6 +296,7 @@
   @media (max-width: 960px) {
     .header-inner { height: auto; padding: 16px 0; flex-wrap: wrap; }
     .nav { display: none; }
+    .quote-btn-nav { display: none; }
     .header-phones { flex-direction: row; }
     .services-grid { grid-template-columns: repeat(2, 1fr); }
     .why-grid { grid-template-columns: repeat(2, 1fr); }
@@ -365,6 +370,10 @@
         <span class="phone-btn-content"><small>Toll-Free</small>(800) 791-7845</span>
       </a>
     </div>
+    <a href="https://tps-pro-quotes.vercel.app" target="_blank" rel="noopener" class="quote-btn-nav">
+      Get a Free Quote
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" width="14" height="14"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+    </a>
   </div>
 </header>
 
