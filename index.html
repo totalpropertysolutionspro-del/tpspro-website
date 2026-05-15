@@ -131,6 +131,28 @@
   .service-learn:hover { background: var(--ink); gap: 10px; }
   .service-learn svg { width: 11px; height: 11px; }
 
+  /* OUR WORK */
+  .work { background: var(--gray-50); padding: 110px 0; position: relative; overflow: hidden; }
+  .work-head { text-align: center; max-width: 760px; margin: 0 auto 56px; }
+  .work-head .eyebrow { background: var(--green); color: #fff; padding: 6px 16px; border-radius: 999px; font-size: 11px; letter-spacing: 0.2em; text-transform: uppercase; font-weight: 700; display: inline-block; margin-bottom: 20px; }
+  .work-head h2 { font-size: clamp(30px, 4vw, 48px); font-weight: 800; letter-spacing: -0.025em; line-height: 1.05; color: var(--ink); margin-bottom: 16px; }
+  .work-head h2 em { font-style: normal; color: var(--green); }
+  .work-head p { color: var(--muted); font-size: 16px; line-height: 1.65; }
+  .work-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 20px; }
+  .work-card { position: relative; aspect-ratio: 4 / 5; border-radius: 18px; overflow: hidden; background: var(--green-dark) center/cover; box-shadow: 0 18px 36px -22px rgba(20,76,18,0.35); transition: transform .35s ease, box-shadow .35s ease; cursor: default; }
+  .work-card:hover { transform: translateY(-6px); box-shadow: 0 30px 50px -22px rgba(20,76,18,0.45); }
+  .work-card::after { content: ""; position: absolute; inset: 0; background: linear-gradient(180deg, rgba(20,76,18,0) 40%, rgba(20,76,18,0.85) 100%); transition: opacity .3s; }
+  .work-card:hover::after { background: linear-gradient(180deg, rgba(20,76,18,0.15) 0%, rgba(20,76,18,0.92) 100%); }
+  .work-card-1 { background-image: url('https://images.unsplash.com/photo-1556909114-f6e7ad7d3136?auto=format&fit=crop&w=900&q=80'); }
+  .work-card-2 { background-image: url('https://images.unsplash.com/photo-1497366216548-37526070297c?auto=format&fit=crop&w=900&q=80'); }
+  .work-card-3 { background-image: url('https://images.unsplash.com/photo-1581578017093-cd30fce4eeb7?auto=format&fit=crop&w=900&q=80'); }
+  .work-card-4 { background-image: url('https://images.unsplash.com/photo-1604014237800-1c9102c219da?auto=format&fit=crop&w=900&q=80'); }
+  .work-card-tag { position: absolute; top: 18px; left: 18px; z-index: 2; background: var(--yellow); color: var(--ink); padding: 6px 12px; border-radius: 999px; font-size: 11px; font-weight: 800; letter-spacing: 0.08em; text-transform: uppercase; }
+  .work-card-meta { position: absolute; bottom: 22px; left: 22px; right: 22px; z-index: 2; color: #fff; }
+  .work-card-meta h4 { font-size: 17px; font-weight: 800; letter-spacing: -0.01em; margin-bottom: 4px; line-height: 1.2; }
+  .work-card-meta p { font-size: 12.5px; color: rgba(255,255,255,0.85); line-height: 1.45; }
+  .work-note { text-align: center; margin-top: 40px; font-size: 13px; color: var(--muted); font-style: italic; }
+
   /* SPOTLIGHT */
   .spotlight { background: #fff; padding: 110px 0; position: relative; overflow: hidden; }
   .spotlight-inner { display: grid; grid-template-columns: 1.05fr 1fr; gap: 72px; align-items: center; }
@@ -301,6 +323,7 @@
     .services-grid { grid-template-columns: repeat(2, 1fr); }
     .why-grid { grid-template-columns: repeat(2, 1fr); }
     .industries-grid { grid-template-columns: repeat(2, 1fr); }
+    .work-grid { grid-template-columns: repeat(2, 1fr); }
     .industries-head { grid-template-columns: 1fr; }
     .testimonials-grid { grid-template-columns: 1fr; }
     .contact-grid { grid-template-columns: 1fr; }
@@ -314,7 +337,7 @@
     .hero { padding: 100px 0 100px; }
     .header-phones { flex-direction: column; width: 100%; }
     .phone-btn { width: 100%; }
-    .services-grid, .why-grid, .industries-grid { grid-template-columns: 1fr; }
+    .services-grid, .why-grid, .industries-grid, .work-grid { grid-template-columns: 1fr; }
     .form-row { grid-template-columns: 1fr; }
     .contact-info, .contact-form-body { padding: 32px 24px; }
     .contact-form-head { padding: 24px; }
@@ -430,6 +453,48 @@
       <div class="service-card"><div class="service-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg></div><h3>Airbnb &amp; Short-Term Rental Cleaning</h3><p>Guest-ready turnovers, linen resets, restocks, and minor repairs — protect your rating and reviews.</p><a href="#contact" class="service-learn">Learn More <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg></a></div>
       <div class="service-card"><div class="service-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="3"/><path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 0 1-2.83 2.83l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-4 0v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 0 1-2.83-2.83l.06-.06a1.65 1.65 0 0 0 .33-1.82 1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1 0-4h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 0 1 2.83-2.83l.06.06a1.65 1.65 0 0 0 1.82.33H9a1.65 1.65 0 0 0 1-1.51V3a2 2 0 0 1 4 0v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 0 1 2.83 2.83l-.06.06a1.65 1.65 0 0 0-.33 1.82V9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 0 4h-.09a1.65 1.65 0 0 0-1.51 1z"/></svg></div><h3>Facility Maintenance</h3><p>Property maintenance services Albany — light handyman, restocks, exterior touches, all in one contract.</p><a href="#contact" class="service-learn">Learn More <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg></a></div>
     </div>
+  </div>
+</section>
+
+<!-- OUR WORK -->
+<section class="work" id="work">
+  <div class="container">
+    <div class="work-head">
+      <span class="eyebrow">Our Work</span>
+      <h2>The kind of spaces <em>we leave behind</em></h2>
+      <p>From apartment turnovers to post-construction punchouts, every job ends the same way — spotless, inspection-ready, and on time. A look at the spaces we deliver, day in and day out.</p>
+    </div>
+    <div class="work-grid">
+      <div class="work-card work-card-1">
+        <span class="work-card-tag">Turnover</span>
+        <div class="work-card-meta">
+          <h4>Apartment Make-Ready</h4>
+          <p>Move-in-ready kitchens &amp; living spaces</p>
+        </div>
+      </div>
+      <div class="work-card work-card-2">
+        <span class="work-card-tag">Janitorial</span>
+        <div class="work-card-meta">
+          <h4>Office &amp; Corporate</h4>
+          <p>Class A office spaces &amp; common areas</p>
+        </div>
+      </div>
+      <div class="work-card work-card-3">
+        <span class="work-card-tag">Deep Clean</span>
+        <div class="work-card-meta">
+          <h4>Detail &amp; Sanitization</h4>
+          <p>Bathroom, kitchen &amp; high-touch surfaces</p>
+        </div>
+      </div>
+      <div class="work-card work-card-4">
+        <span class="work-card-tag">Post-Construction</span>
+        <div class="work-card-meta">
+          <h4>Punchout &amp; Final Polish</h4>
+          <p>Drywall dust, debris &amp; handoff-ready</p>
+        </div>
+      </div>
+    </div>
+    <p class="work-note">Photos shown represent the standard of work our crews deliver. Project photo gallery coming soon.</p>
   </div>
 </section>
 
