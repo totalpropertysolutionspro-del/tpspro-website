@@ -422,6 +422,14 @@
   }
 }
 </script>
+<!-- Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-0KM9JRJL2D"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-0KM9JRJL2D');
+</script>
 </head>
 <body>
 
@@ -449,13 +457,37 @@
         <small>Albany, NY · Capital Region</small>
       </span>
     </a>
-    <nav class="nav">
-      <a href="#" class="active">Home</a>
-      <a href="#services">Services</a>
-      <a href="#service-area">Service Area</a>
-      <a href="#industries">Industries</a>
-      <a href="#staffing">Staffing of America</a>
-      <a href="#faq">FAQ</a>
+    <nav class="nav" id="primaryNav">
+      <a href="/" class="active">Home</a>
+      <div class="nav-dropdown">
+        <a href="#services" class="nav-dropdown-trigger">Services &#9662;</a>
+        <div class="nav-dropdown-menu">
+          <a href="/janitorial-services.html">Janitorial Services</a>
+          <a href="/student-turnover-cleaning.html">Student Turnover Cleaning</a>
+          <a href="/make-ready-cleaning.html">Make-Ready / Apartment Turnover</a>
+          <a href="/post-construction-cleaning.html">Post-Construction Cleaning</a>
+          <a href="/renovation-cleaning.html">Renovation Cleaning</a>
+          <a href="/airbnb-cleaning.html">Airbnb &amp; Short-Term Rental</a>
+          <a href="/floor-care.html">Floor Care</a>
+          <a href="/facility-maintenance.html">Facility Maintenance</a>
+        </div>
+      </div>
+      <div class="nav-dropdown">
+        <a href="#service-area" class="nav-dropdown-trigger">Locations &#9662;</a>
+        <div class="nav-dropdown-menu">
+          <a href="/albany-ny.html">Albany, NY</a>
+          <a href="/saratoga-county.html">Saratoga County</a>
+          <a href="/saratoga-springs.html">Saratoga Springs</a>
+          <a href="/troy-ny.html">Troy, NY</a>
+          <a href="/schenectady-ny.html">Schenectady, NY</a>
+          <a href="/cohoes-ny.html">Cohoes, NY</a>
+          <a href="/clifton-park-ny.html">Clifton Park, NY</a>
+          <a href="/ballston-spa-ny.html">Ballston Spa, NY</a>
+          <a href="/glens-falls-ny.html">Glens Falls, NY</a>
+        </div>
+      </div>
+      <a href="/faq.html">FAQ</a>
+      <a href="/blog.html">Blog</a>
       <a href="#contact">Contact</a>
     </nav>
     <div class="header-phones">
@@ -519,14 +551,14 @@
       <p>Eight specialty service lines — from janitorial services Albany NY to post-construction cleaning and apartment make-ready services. One accountable team, one number to call.</p>
     </div>
     <div class="services-grid">
-      <div class="service-card"><div class="service-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 21h18"/><path d="M5 21V7l7-4 7 4v14"/><rect x="9" y="11" width="2" height="3"/><rect x="13" y="11" width="2" height="3"/><rect x="9" y="16" width="2" height="3"/><rect x="13" y="16" width="2" height="3"/></svg></div><h3>Commercial Janitorial Services</h3><p>Recurring office and facility cleaning programs scheduled around your hours, your standards, and your team.</p><a href="#contact" class="service-learn">Learn More <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg></a></div>
-      <div class="service-card"><div class="service-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2l-2 2-7 7v5h5l7-7 2-2-5-5z"/><path d="M11 5l5 5"/></svg></div><h3>Renovations &amp; Renovation Cleaning</h3><p>Mid- and post-renovation cleanup that gets sites tenant-ready, guest-ready, or inspection-ready fast.</p><a href="#contact" class="service-learn">Learn More <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg></a></div>
-      <div class="service-card"><div class="service-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M2 22h20"/><path d="M12 2L4 8v14h16V8l-8-6z"/><path d="M9 14h6"/></svg></div><h3>Post-Construction Cleaning</h3><p>Drywall dust, debris, and final-polish punchouts handled before your handoff or grand opening.</p><a href="#contact" class="service-learn">Learn More <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg></a></div>
-      <div class="service-card"><div class="service-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 10v6M2 10l10-5 10 5-10 5z"/><path d="M6 12v5c3 3 9 3 12 0v-5"/></svg></div><h3>Student Turnover Cleaning</h3><p>Campus-area apartment deep cleans on tight academic deadlines — at scale, building by building.</p><a href="#contact" class="service-learn">Learn More <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg></a></div>
-      <div class="service-card"><div class="service-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"/><polyline points="3.27 6.96 12 12.01 20.73 6.96"/><line x1="12" y1="22.08" x2="12" y2="12"/></svg></div><h3>Tenant / Make-Ready Turnover</h3><p>Apartment make-ready services done same- or next-day so listings go live and revenue keeps moving.</p><a href="#contact" class="service-learn">Learn More <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg></a></div>
-      <div class="service-card"><div class="service-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="7" height="7"/><rect x="14" y="3" width="7" height="7"/><rect x="3" y="14" width="7" height="7"/><rect x="14" y="14" width="7" height="7"/></svg></div><h3>Floor Care (VCT, LVT, Tile, Carpet)</h3><p>Strip, wax, buff, deep extract, and carpet cleaning services. Floors that earn second looks.</p><a href="#contact" class="service-learn">Learn More <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg></a></div>
-      <div class="service-card"><div class="service-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg></div><h3>Airbnb &amp; Short-Term Rental Cleaning</h3><p>Guest-ready turnovers, linen resets, restocks, and minor repairs — protect your rating and reviews.</p><a href="#contact" class="service-learn">Learn More <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg></a></div>
-      <div class="service-card"><div class="service-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="3"/><path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 0 1-2.83 2.83l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-4 0v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 0 1-2.83-2.83l.06-.06a1.65 1.65 0 0 0 .33-1.82 1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1 0-4h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 0 1 2.83-2.83l.06.06a1.65 1.65 0 0 0 1.82.33H9a1.65 1.65 0 0 0 1-1.51V3a2 2 0 0 1 4 0v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 0 1 2.83 2.83l-.06.06a1.65 1.65 0 0 0-.33 1.82V9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 0 4h-.09a1.65 1.65 0 0 0-1.51 1z"/></svg></div><h3>Facility Maintenance</h3><p>Property maintenance services Albany — light handyman, restocks, exterior touches, all in one contract.</p><a href="#contact" class="service-learn">Learn More <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg></a></div>
+      <div class="service-card"><div class="service-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 21h18"/><path d="M5 21V7l7-4 7 4v14"/><rect x="9" y="11" width="2" height="3"/><rect x="13" y="11" width="2" height="3"/><rect x="9" y="16" width="2" height="3"/><rect x="13" y="16" width="2" height="3"/></svg></div><h3>Commercial Janitorial Services</h3><p>Recurring office and facility cleaning programs scheduled around your hours, your standards, and your team.</p><a href="/janitorial-services.html" class="service-learn">Learn More <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg></a></div>
+      <div class="service-card"><div class="service-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2l-2 2-7 7v5h5l7-7 2-2-5-5z"/><path d="M11 5l5 5"/></svg></div><h3>Renovations &amp; Renovation Cleaning</h3><p>Mid- and post-renovation cleanup that gets sites tenant-ready, guest-ready, or inspection-ready fast.</p><a href="/renovation-cleaning.html" class="service-learn">Learn More <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg></a></div>
+      <div class="service-card"><div class="service-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M2 22h20"/><path d="M12 2L4 8v14h16V8l-8-6z"/><path d="M9 14h6"/></svg></div><h3>Post-Construction Cleaning</h3><p>Drywall dust, debris, and final-polish punchouts handled before your handoff or grand opening.</p><a href="/post-construction-cleaning.html" class="service-learn">Learn More <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg></a></div>
+      <div class="service-card"><div class="service-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 10v6M2 10l10-5 10 5-10 5z"/><path d="M6 12v5c3 3 9 3 12 0v-5"/></svg></div><h3>Student Turnover Cleaning</h3><p>Campus-area apartment deep cleans on tight academic deadlines — at scale, building by building.</p><a href="/student-turnover-cleaning.html" class="service-learn">Learn More <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg></a></div>
+      <div class="service-card"><div class="service-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"/><polyline points="3.27 6.96 12 12.01 20.73 6.96"/><line x1="12" y1="22.08" x2="12" y2="12"/></svg></div><h3>Tenant / Make-Ready Turnover</h3><p>Apartment make-ready services done same- or next-day so listings go live and revenue keeps moving.</p><a href="/make-ready-cleaning.html" class="service-learn">Learn More <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg></a></div>
+      <div class="service-card"><div class="service-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="7" height="7"/><rect x="14" y="3" width="7" height="7"/><rect x="3" y="14" width="7" height="7"/><rect x="14" y="14" width="7" height="7"/></svg></div><h3>Floor Care (VCT, LVT, Tile, Carpet)</h3><p>Strip, wax, buff, deep extract, and carpet cleaning services. Floors that earn second looks.</p><a href="/floor-care.html" class="service-learn">Learn More <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg></a></div>
+      <div class="service-card"><div class="service-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg></div><h3>Airbnb &amp; Short-Term Rental Cleaning</h3><p>Guest-ready turnovers, linen resets, restocks, and minor repairs — protect your rating and reviews.</p><a href="/airbnb-cleaning.html" class="service-learn">Learn More <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg></a></div>
+      <div class="service-card"><div class="service-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="3"/><path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 0 1-2.83 2.83l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-4 0v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 0 1-2.83-2.83l.06-.06a1.65 1.65 0 0 0 .33-1.82 1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1 0-4h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 0 1 2.83-2.83l.06.06a1.65 1.65 0 0 0 1.82.33H9a1.65 1.65 0 0 0 1-1.51V3a2 2 0 0 1 4 0v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 0 1 2.83 2.83l-.06.06a1.65 1.65 0 0 0-.33 1.82V9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 0 4h-.09a1.65 1.65 0 0 0-1.51 1z"/></svg></div><h3>Facility Maintenance</h3><p>Property maintenance services Albany — light handyman, restocks, exterior touches, all in one contract.</p><a href="/facility-maintenance.html" class="service-learn">Learn More <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg></a></div>
     </div>
   </div>
 </section>
