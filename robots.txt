@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://totalpropertysolution.net/sitemap.xml
