@@ -3,212 +3,31 @@
 <head>
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<title>Albany Commercial Cleaning & Property Maintenance | TPS Pro LLC</title>
-<meta name="description" content="TPS Pro LLC — Albany's full-service commercial property company. Cleaning + maintenance under one contract. Floor care, build-out support, facility maintenance & 24/7 emergency response across the Capital Region. Bonded & insured. (518) 948-7156." />
-<meta property="og:title" content="Albany's Commercial Property Experts | TPS Pro LLC">
-<meta property="og:description" content="Cleaning + Maintenance. One company. One contract. Serving Fortune 500 facilities, apartment operators & property managers across Albany and the Capital Region.">
-<meta property="og:url" content="https://totalpropertysolution.net">
-<meta property="og:type" content="website">
-<meta property="og:image" content="https://totalpropertysolution.net/images/hero-buildout.jpg">
+<title>Commercial Cleaning & Property Maintenance Albany NY | TPS Pro</title>
+<meta name="description" content="TPS Pro LLC — Albany's full-service commercial cleaning & property maintenance company. Janitorial, office cleaning, floor care & 24/7 maintenance under one contract. Bonded & insured. Free quote: (518) 948-7156." />
+<meta name="robots" content="index, follow" />
 <link rel="canonical" href="https://totalpropertysolution.net/" />
-<meta name="geo.region" content="US-NY">
-<meta name="geo.placename" content="Albany, Capital Region">
-<link rel="icon" type="image/png" href="assets/logo.png">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
-<style>
-  :root {
-    --navy: #0A1628;
-    --navy-2: #0F2238;
-    --green: #1B4D3E;
-    --green-2: #246552;
-    --gold: #C9A84C;
-    --gold-2: #DCC06B;
-    --white: #FFFFFF;
-    --ink: #1A2433;
-    --muted: #5A6675;
-    --line: #E3E7EC;
-    --gray-50: #F6F8F9;
-    --max: 1240px;
-  }
-
-  * { box-sizing: border-box; margin: 0; padding: 0; }
-  html { scroll-behavior: smooth; }
-  body {
-    font-family: 'Inter', system-ui, -apple-system, Segoe UI, sans-serif;
-    color: var(--ink);
-    background: var(--white);
-    line-height: 1.65;
-    -webkit-font-smoothing: antialiased;
-  }
-  img { max-width: 100%; display: block; }
-  a { color: inherit; text-decoration: none; }
-  button { font-family: inherit; cursor: pointer; border: none; background: none; }
-  h1, h2, h3 { line-height: 1.12; letter-spacing: -0.02em; }
-  .container { max-width: var(--max); margin: 0 auto; padding: 0 28px; }
-
-  /* BUTTONS */
-  .btn { display: inline-flex; align-items: center; gap: 10px; font-weight: 700; font-size: 15px; padding: 15px 28px; border-radius: 8px; transition: transform .2s, box-shadow .2s, background .2s, color .2s; white-space: nowrap; }
-  .btn-gold { background: var(--gold); color: var(--navy); box-shadow: 0 10px 30px -12px rgba(201,168,76,.7); }
-  .btn-gold:hover { background: var(--gold-2); transform: translateY(-2px); box-shadow: 0 16px 36px -12px rgba(201,168,76,.8); }
-  .btn-outline { background: transparent; color: #fff; border: 1.5px solid rgba(255,255,255,.45); }
-  .btn-outline:hover { border-color: #fff; background: rgba(255,255,255,.08); transform: translateY(-2px); }
-  .btn-green { background: var(--green); color: #fff; }
-  .btn-green:hover { background: var(--green-2); transform: translateY(-2px); }
-
-  /* TOPBAR */
-  .topbar { background: var(--navy); color: #c7d2de; font-size: 13px; font-weight: 500; border-bottom: 1px solid rgba(255,255,255,.06); }
-  .topbar-inner { display: flex; justify-content: space-between; align-items: center; height: 40px; gap: 16px; }
-  .topbar-left { display: flex; gap: 22px; }
-  .topbar-left span { display: inline-flex; align-items: center; gap: 7px; }
-  .topbar .gold { color: var(--gold); }
-  .topbar-right { display: flex; gap: 18px; align-items: center; }
-  .topbar-right a:hover { color: var(--gold); }
-
-  /* HEADER */
-  .header { position: sticky; top: 0; z-index: 100; background: rgba(255,255,255,.96); backdrop-filter: blur(8px); border-bottom: 1px solid var(--line); transition: box-shadow .25s; }
-  .header.scrolled { box-shadow: 0 10px 30px -20px rgba(10,22,40,.4); }
-  .header-inner { display: flex; align-items: center; justify-content: space-between; gap: 28px; height: 84px; }
-  .logo { display: flex; align-items: center; gap: 13px; flex-shrink: 0; }
-  .logo img { width: 58px; height: 58px; object-fit: contain; }
-  .logo-text { display: flex; flex-direction: column; line-height: 1.05; }
-  .logo-text strong { font-weight: 900; font-size: 20px; color: var(--navy); letter-spacing: -0.02em; }
-  .logo-text small { font-weight: 600; font-size: 9.5px; letter-spacing: 0.18em; text-transform: uppercase; color: var(--green); margin-top: 3px; }
-
-  .nav { display: flex; align-items: center; gap: 30px; }
-  .nav a { font-size: 14.5px; font-weight: 600; color: var(--ink); transition: color .2s; position: relative; padding: 6px 0; }
-  .nav a::after { content: ""; position: absolute; left: 0; right: 0; bottom: 0; height: 2px; background: var(--gold); transform: scaleX(0); transition: transform .25s ease; transform-origin: left; }
-  .nav a:hover { color: var(--green); }
-  .nav a:hover::after { transform: scaleX(1); }
-
-  .header-cta { display: flex; align-items: center; gap: 16px; }
-  .header-phone { display: flex; flex-direction: column; line-height: 1.15; text-align: right; }
-  .header-phone small { font-size: 10px; letter-spacing: .12em; text-transform: uppercase; color: var(--muted); font-weight: 600; }
-  .header-phone strong { font-size: 19px; font-weight: 800; color: var(--green); }
-  .header-phone strong:hover { color: var(--gold); }
-
-  .menu-toggle { display: none; width: 44px; height: 44px; border-radius: 8px; flex-direction: column; justify-content: center; align-items: center; gap: 5px; border: 1px solid var(--line); }
-  .menu-toggle span { width: 22px; height: 2px; background: var(--navy); border-radius: 2px; transition: .2s; }
-
-  /* HERO */
-  .hero { position: relative; color: #fff; overflow: hidden; }
-  .hero-bg { position: absolute; inset: 0; background: url('images/hero-buildout.jpg') center 35%/cover no-repeat; }
-  .hero-bg::after { content: ""; position: absolute; inset: 0; background: linear-gradient(105deg, rgba(10,22,40,.96) 0%, rgba(10,22,40,.86) 42%, rgba(27,77,62,.62) 100%); }
-  .hero-inner { position: relative; max-width: 820px; padding: 130px 0 140px; }
-  .hero-eyebrow { display: inline-flex; align-items: center; gap: 10px; font-size: 12px; letter-spacing: 0.2em; text-transform: uppercase; color: var(--gold); font-weight: 700; margin-bottom: 26px; background: rgba(201,168,76,.1); border: 1px solid rgba(201,168,76,.35); padding: 8px 16px; border-radius: 999px; }
-  .hero h1 { font-size: clamp(38px, 6vw, 66px); font-weight: 900; margin-bottom: 22px; }
-  .hero h1 .accent { color: var(--gold); }
-  .hero-sub { font-size: clamp(18px, 2.4vw, 23px); color: #d7dee7; font-weight: 400; max-width: 620px; margin-bottom: 38px; }
-  .hero-sub strong { color: #fff; font-weight: 700; }
-  .hero-btns { display: flex; gap: 16px; flex-wrap: wrap; }
-  .hero-trust { margin-top: 44px; display: flex; gap: 30px; flex-wrap: wrap; color: #aeb9c6; font-size: 14px; }
-  .hero-trust span { display: inline-flex; align-items: center; gap: 9px; font-weight: 500; }
-  .hero-trust .dot { width: 7px; height: 7px; border-radius: 50%; background: var(--gold); }
-
-  /* TRUSTED BY */
-  .trusted { background: var(--navy-2); padding: 38px 0; border-top: 1px solid rgba(255,255,255,.06); }
-  .trusted p { text-align: center; color: #8896a6; font-size: 12px; letter-spacing: 0.22em; text-transform: uppercase; font-weight: 600; margin-bottom: 24px; }
-  .trusted-row { display: flex; flex-wrap: wrap; justify-content: center; align-items: center; gap: 18px 44px; }
-  .trusted-row span { color: #e7ecf2; font-weight: 800; font-size: clamp(16px, 2.2vw, 22px); letter-spacing: .01em; opacity: .82; transition: opacity .2s, color .2s; }
-  .trusted-row span:hover { opacity: 1; color: var(--gold); }
-
-  /* SECTION HEADING */
-  .section { padding: 96px 0; }
-  .section-head { max-width: 720px; margin: 0 auto 56px; text-align: center; }
-  .kicker { display: inline-block; font-size: 12px; letter-spacing: 0.2em; text-transform: uppercase; color: var(--green); font-weight: 800; margin-bottom: 14px; }
-  .section-head h2 { font-size: clamp(30px, 4vw, 44px); font-weight: 900; color: var(--navy); margin-bottom: 16px; }
-  .section-head p { color: var(--muted); font-size: 17px; }
-
-  /* SERVICES */
-  .services { background: var(--gray-50); }
-  .service-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 24px; }
-  .service-card { background: #fff; border: 1px solid var(--line); border-radius: 14px; padding: 34px 28px; transition: transform .25s, box-shadow .25s, border-color .25s; }
-  .service-card:hover { transform: translateY(-6px); box-shadow: 0 24px 50px -28px rgba(10,22,40,.4); border-color: transparent; }
-  .service-icon { width: 56px; height: 56px; border-radius: 12px; background: var(--navy); display: flex; align-items: center; justify-content: center; margin-bottom: 22px; }
-  .service-icon svg { width: 26px; height: 26px; stroke: var(--gold); fill: none; stroke-width: 2; stroke-linecap: round; stroke-linejoin: round; }
-  .service-card h3 { font-size: 20px; font-weight: 800; color: var(--navy); margin-bottom: 12px; }
-  .service-card p { color: var(--muted); font-size: 14.5px; }
-
-  /* PORTFOLIO */
-  .portfolio-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 18px; }
-  .pf-item { position: relative; overflow: hidden; border-radius: 14px; aspect-ratio: 4 / 3; background: var(--navy); }
-  .pf-item.tall { grid-row: span 2; aspect-ratio: auto; }
-  .pf-item img { width: 100%; height: 100%; object-fit: cover; transition: transform .5s ease; }
-  .pf-item:hover img { transform: scale(1.07); }
-  .pf-item::after { content: ""; position: absolute; inset: 0; background: linear-gradient(to top, rgba(10,22,40,.82) 0%, rgba(10,22,40,0) 52%); }
-  .pf-cap { position: absolute; left: 20px; bottom: 18px; z-index: 2; color: #fff; }
-  .pf-cap small { display: block; font-size: 11px; letter-spacing: .16em; text-transform: uppercase; color: var(--gold); font-weight: 700; margin-bottom: 3px; }
-  .pf-cap strong { font-size: 19px; font-weight: 800; }
-
-  /* ABOUT */
-  .about { background: var(--navy); color: #fff; }
-  .about-wrap { display: grid; grid-template-columns: 1.05fr 1fr; gap: 60px; align-items: center; }
-  .about-text .kicker { color: var(--gold); }
-  .about-text h2 { font-size: clamp(30px, 4vw, 44px); font-weight: 900; margin-bottom: 22px; }
-  .about-text p { color: #c2cdd9; font-size: 17px; margin-bottom: 18px; }
-  .about-text p strong { color: #fff; }
-  .about-stats { display: flex; gap: 40px; margin: 32px 0; flex-wrap: wrap; }
-  .about-stats div strong { display: block; font-size: 38px; font-weight: 900; color: var(--gold); line-height: 1; }
-  .about-stats div span { font-size: 13.5px; color: #9fadbc; font-weight: 500; }
-  .about-img { position: relative; }
-  .about-img img { border-radius: 16px; width: 100%; aspect-ratio: 4/5; object-fit: cover; box-shadow: 0 30px 60px -30px rgba(0,0,0,.6); }
-  .about-badge { position: absolute; bottom: -22px; left: -22px; background: var(--gold); color: var(--navy); padding: 18px 24px; border-radius: 12px; font-weight: 800; box-shadow: 0 20px 40px -16px rgba(0,0,0,.5); }
-  .about-badge small { display: block; font-size: 11px; letter-spacing: .12em; text-transform: uppercase; font-weight: 700; opacity: .8; }
-  .about-badge strong { font-size: 18px; }
-
-  /* CONTACT CTA */
-  .cta { background: var(--green); color: #fff; position: relative; overflow: hidden; }
-  .cta::before { content: ""; position: absolute; right: -120px; top: -120px; width: 360px; height: 360px; border-radius: 50%; background: rgba(201,168,76,.12); }
-  .cta-inner { position: relative; text-align: center; padding: 90px 0; }
-  .cta h2 { font-size: clamp(32px, 5vw, 52px); font-weight: 900; margin-bottom: 16px; }
-  .cta p { font-size: 18px; color: #d6e3dd; margin-bottom: 36px; }
-  .cta-phone { display: inline-flex; flex-direction: column; align-items: center; margin-bottom: 34px; }
-  .cta-phone small { font-size: 12px; letter-spacing: .2em; text-transform: uppercase; color: var(--gold-2); font-weight: 700; margin-bottom: 6px; }
-  .cta-phone a { font-size: clamp(34px, 6vw, 54px); font-weight: 900; color: #fff; letter-spacing: -0.02em; }
-  .cta-phone a:hover { color: var(--gold-2); }
-  .cta-meta { display: flex; gap: 14px 36px; justify-content: center; flex-wrap: wrap; margin-bottom: 36px; color: #cfe0d9; font-size: 15.5px; }
-  .cta-meta a:hover { color: #fff; }
-  .cta-meta span { display: inline-flex; align-items: center; gap: 9px; }
-
-  /* FOOTER */
-  .footer { background: var(--navy); color: #9fadbc; padding: 54px 0 30px; }
-  .footer-top { display: flex; justify-content: space-between; gap: 30px; flex-wrap: wrap; align-items: flex-start; padding-bottom: 32px; border-bottom: 1px solid rgba(255,255,255,.08); }
-  .footer .logo-text strong { color: #fff; }
-  .footer .logo-text small { color: var(--gold); }
-  .footer-links { display: flex; gap: 28px; flex-wrap: wrap; }
-  .footer-links a { color: #c2cdd9; font-size: 14.5px; font-weight: 500; }
-  .footer-links a:hover { color: var(--gold); }
-  .footer-bottom { display: flex; justify-content: space-between; gap: 14px; flex-wrap: wrap; padding-top: 24px; font-size: 13px; }
-
-  /* RESPONSIVE */
-  @media (max-width: 1000px) {
-    .service-grid { grid-template-columns: repeat(2, 1fr); }
-    .about-wrap { grid-template-columns: 1fr; gap: 48px; }
-    .about-img { max-width: 460px; margin: 0 auto; }
-  }
-  @media (max-width: 820px) {
-    .topbar { display: none; }
-    .nav, .header-phone small { display: none; }
-    .menu-toggle { display: flex; }
-    .nav { position: fixed; top: 84px; left: 0; right: 0; background: #fff; flex-direction: column; align-items: stretch; gap: 0; padding: 8px 0; box-shadow: 0 20px 40px -20px rgba(10,22,40,.4); transform: translateY(-130%); transition: transform .3s ease; border-top: 1px solid var(--line); }
-    .nav.open { transform: translateY(0); }
-    .nav a { padding: 15px 28px; border-bottom: 1px solid var(--line); }
-    .nav a::after { display: none; }
-    .portfolio-grid { grid-template-columns: repeat(2, 1fr); }
-    .pf-item.tall { grid-row: span 1; aspect-ratio: 4/3; }
-    .section { padding: 70px 0; }
-  }
-  @media (max-width: 560px) {
-    .container { padding: 0 20px; }
-    .service-grid { grid-template-columns: 1fr; }
-    .portfolio-grid { grid-template-columns: 1fr; }
-    .hero-inner { padding: 90px 0 100px; }
-    .hero-btns { flex-direction: column; align-items: stretch; }
-    .hero-btns .btn { justify-content: center; }
-    .about-badge { left: 50%; transform: translateX(-50%); bottom: -22px; }
-  }
-</style>
+<link rel="alternate" hreflang="en-us" href="https://totalpropertysolution.net/" />
+<meta name="geo.region" content="US-NY" />
+<meta name="geo.placename" content="Albany, NY" />
+<meta name="geo.position" content="42.6526;-73.7562" />
+<!-- Open Graph -->
+<meta property="og:title" content="Commercial Cleaning & Property Maintenance Albany NY | TPS Pro" />
+<meta property="og:description" content="Cleaning + maintenance under one contract. Serving Fortune 500 facilities, apartment operators & property managers across Albany and the Capital Region." />
+<meta property="og:url" content="https://totalpropertysolution.net/" />
+<meta property="og:type" content="website" />
+<meta property="og:image" content="https://totalpropertysolution.net/images/hero-buildout.jpg" />
+<meta property="og:site_name" content="TPS Pro LLC" />
+<!-- Twitter -->
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:title" content="Commercial Cleaning & Property Maintenance Albany NY | TPS Pro" />
+<meta name="twitter:description" content="Cleaning + maintenance under one contract across Albany & the Capital Region. Bonded & insured. (518) 948-7156." />
+<meta name="twitter:image" content="https://totalpropertysolution.net/images/hero-buildout.jpg" />
+<link rel="icon" type="image/png" href="assets/logo.png" />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet" />
+<link rel="stylesheet" href="style.css" />
 </head>
 <body>
 
@@ -220,7 +39,7 @@
       <span><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="gold"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg> Available 24/7 · Bonded &amp; Insured</span>
     </div>
     <div class="topbar-right">
-      <a href="tel:+18007917845">Toll-Free (800) 791-7845</a>
+      <a href="tel:+15189487156">(518) 948-7156</a>
       <a href="mailto:bookings@totalpropertysolution.net">bookings@totalpropertysolution.net</a>
     </div>
   </div>
@@ -229,26 +48,33 @@
 <!-- HEADER -->
 <header class="header" id="header">
   <div class="container header-inner">
-    <a href="/" class="logo">
-      <img src="assets/logo.png" alt="TPS Pro — Total Property Solutions Pro LLC" />
-      <span class="logo-text">
-        <strong>TPS Pro</strong>
-        <small>Total Property Solutions</small>
-      </span>
+    <a href="index.html" class="logo">
+      <img src="assets/logo.png" alt="TPS Pro — Total Property Solutions Pro LLC, Albany NY" />
+      <span class="logo-text"><strong>TPS Pro</strong><small>Total Property Solutions</small></span>
     </a>
     <nav class="nav" id="nav">
-      <a href="#services">Services</a>
-      <a href="#portfolio">Portfolio</a>
+      <a href="index.html" class="active">Home</a>
+      <div class="nav-dd">
+        <button>Services <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></svg></button>
+        <div class="nav-dd-menu">
+          <a href="services.html">All Services</a>
+          <a href="commercial-cleaning-albany-ny.html">Commercial Cleaning</a>
+          <a href="janitorial-services.html">Janitorial Services</a>
+          <a href="office-cleaning.html">Office Cleaning</a>
+          <a href="property-maintenance.html">Property Maintenance</a>
+        </div>
+      </div>
       <a href="about.html">About</a>
       <a href="contact.html">Contact</a>
+      <a href="quote.html" class="nav-cta-mobile cta-quote">Get a Free Quote</a>
+      <a href="tel:+15189487156" class="nav-cta-mobile cta-call">Call (518) 948-7156</a>
     </nav>
     <div class="header-cta">
       <a href="tel:+15189487156" class="header-phone">
-        <small>Call Today</small>
-        <strong>(518) 948-7156</strong>
+        <small>Call Today</small><strong>(518) 948-7156</strong>
       </a>
-      <a href="contact.html" class="btn btn-green" style="padding:12px 20px;font-size:14px;">Get a Quote</a>
-      <button class="menu-toggle" id="menuToggle" aria-label="Menu"><span></span><span></span><span></span></button>
+      <a href="quote.html" class="btn btn-gold">Get a Free Quote</a>
+      <button class="menu-toggle" id="menuToggle" aria-label="Open menu"><span></span><span></span><span></span></button>
     </div>
   </div>
 </header>
@@ -260,12 +86,12 @@
     <div class="hero-inner">
       <span class="hero-eyebrow">Commercial Cleaning + Property Maintenance</span>
       <h1>Albany's Commercial <span class="accent">Property Experts</span></h1>
-      <p class="hero-sub"><strong>Cleaning + Maintenance.</strong> One company. One contract. We keep Fortune 500 facilities, apartment communities, and commercial properties running across the Capital Region.</p>
+      <p class="hero-sub"><strong>Cleaning + Maintenance. One company. One contract.</strong> We keep Fortune 500 facilities, apartment communities, and commercial properties spotless and running across the Capital Region.</p>
       <div class="hero-btns">
-        <a href="contact.html" class="btn btn-gold">Get a Free Quote
-          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+        <a href="quote.html" class="btn btn-gold btn-lg">Get a Free Quote
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
         </a>
-        <a href="#portfolio" class="btn btn-outline">See Our Work</a>
+        <a href="services.html" class="btn btn-outline-light btn-lg">Explore Services</a>
       </div>
       <div class="hero-trust">
         <span><i class="dot"></i> Serving Fortune 500 facilities</span>
@@ -281,193 +107,239 @@
   <div class="container">
     <p>Trusted by the Capital Region's leading operators</p>
     <div class="trusted-row">
-      <span>SONOCO</span>
       <span>FirstLight Fiber</span>
       <span>WJW / CBRE</span>
       <span>Greystar</span>
-      <span>RPM Capital Region</span>
+      <span>RPM Living</span>
       <span>The Coda</span>
+      <span>Hoosick</span>
     </div>
   </div>
 </section>
 
 <!-- SERVICES -->
-<section class="section services" id="services">
+<section class="section gray" id="services">
   <div class="container">
     <div class="section-head">
       <span class="kicker">What We Do</span>
       <h2>One Company for Every Property Need</h2>
-      <p>Cleaning and maintenance shouldn't mean juggling five vendors. TPS Pro delivers both under one accountable contract.</p>
+      <p>Cleaning and maintenance shouldn't mean juggling five vendors. TPS Pro delivers both under one accountable contract — something no other Albany cleaning company offers.</p>
     </div>
-    <div class="service-grid">
-      <div class="service-card">
+    <div class="grid-4">
+      <a href="commercial-cleaning-albany-ny.html" class="service-card">
         <div class="service-icon"><svg viewBox="0 0 24 24"><path d="M3 21h18"/><path d="M5 21V7l8-4v18"/><path d="M19 21V11l-6-4"/><path d="M9 9h.01M9 12h.01M9 15h.01"/></svg></div>
         <h3>Commercial Cleaning</h3>
-        <p>Recurring janitorial, floor care, carpet extraction, and deep cleans for offices, retail, warehouses, and medical facilities — day, evening, or overnight.</p>
-      </div>
-      <div class="service-card">
+        <p>Recurring janitorial, floor care, carpet extraction, and deep cleans for offices, retail, warehouses, and medical facilities.</p>
+        <span class="more">Learn more →</span>
+      </a>
+      <a href="property-maintenance.html" class="service-card">
         <div class="service-icon"><svg viewBox="0 0 24 24"><path d="M14.7 6.3a4 4 0 0 0-5.4 5.4l-6 6a2 2 0 0 0 2.8 2.8l6-6a4 4 0 0 0 5.4-5.4l-2.5 2.5-2.1-.4-.4-2.1z"/></svg></div>
         <h3>Property Maintenance</h3>
-        <p>Drain service, plumbing repairs, drywall, painting, rooftop and HVAC upkeep. We handle the punch list so your facility never skips a beat.</p>
-      </div>
-      <div class="service-card">
+        <p>Drain service, plumbing repairs, drywall, painting, rooftop and HVAC upkeep. We handle the punch list end to end.</p>
+        <span class="more">Learn more →</span>
+      </a>
+      <a href="office-cleaning.html" class="service-card">
         <div class="service-icon"><svg viewBox="0 0 24 24"><path d="M2 20h20"/><path d="M4 20V8l8-5 8 5v12"/><path d="M9 20v-6h6v6"/></svg></div>
-        <h3>Build-Out Support</h3>
-        <p>Commercial build-outs and gut renovations — framing cleanup, post-construction cleaning, and tenant make-ready so spaces open on schedule.</p>
-      </div>
-      <div class="service-card">
+        <h3>Office Cleaning</h3>
+        <p>Day-porter and after-hours office cleaning that keeps workspaces healthy, presentable, and ready for your team and clients.</p>
+        <span class="more">Learn more →</span>
+      </a>
+      <a href="janitorial-services.html" class="service-card">
         <div class="service-icon"><svg viewBox="0 0 24 24"><path d="M13 2 3 14h7l-1 8 10-12h-7l1-8z"/></svg></div>
-        <h3>Emergency Response</h3>
-        <p>Water intrusion, post-event cleanup, urgent turnovers — our crews mobilize 24/7 across Albany and the Capital Region when you can't wait.</p>
-      </div>
+        <h3>Janitorial Services</h3>
+        <p>Scheduled janitorial programs with vetted, uniformed crews, quality checklists, and 24/7 emergency response across the region.</p>
+        <span class="more">Learn more →</span>
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- WHY US -->
+<section class="section">
+  <div class="container">
+    <div class="section-head">
+      <span class="kicker">Why TPS Pro</span>
+      <h2>Built to Be the Last Vendor You'll Need</h2>
+      <p>Property managers choose TPS Pro because we remove vendors from their plate, not add to it.</p>
+    </div>
+    <div class="grid-3">
+      <div class="feature"><div class="fi"><svg viewBox="0 0 24 24"><path d="M9 11l3 3L22 4"/><path d="M21 12v7a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11"/></svg></div><div><h3>Cleaning + Maintenance, One Contract</h3><p>Janitorial and hands-on repairs from one accountable team — no chasing five vendors or pointing fingers.</p></div></div>
+      <div class="feature"><div class="fi"><svg viewBox="0 0 24 24"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg></div><div><h3>Bonded, Insured &amp; Documented</h3><p>A certificate of insurance lands in your inbox before our crew ever sets foot on site. Zero exposure for you.</p></div></div>
+      <div class="feature"><div class="fi"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg></div><div><h3>24/7 Emergency Response</h3><p>Water intrusion, urgent turnovers, after-hours messes — our crews mobilize across the Capital Region when you can't wait.</p></div></div>
+      <div class="feature"><div class="fi"><svg viewBox="0 0 24 24"><path d="M20 7h-9"/><path d="M14 17H5"/><circle cx="17" cy="17" r="3"/><circle cx="7" cy="7" r="3"/></svg></div><div><h3>Custom Scopes, Not Packages</h3><p>We build a scope around your facility and budget — daily, weekly, or monthly — then hold ourselves to it with checklists.</p></div></div>
+      <div class="feature"><div class="fi"><svg viewBox="0 0 24 24"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M22 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg></div><div><h3>Vetted, Uniformed Crews</h3><p>Background-checked, trained, and supervised. The same faces you can trust inside your building, every visit.</p></div></div>
+      <div class="feature"><div class="fi"><svg viewBox="0 0 24 24"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg></div><div><h3>Local &amp; Accountable</h3><p>Albany-based and owner-involved. When you call, you reach decision-makers — not a national franchise call center.</p></div></div>
+    </div>
+  </div>
+</section>
+
+<!-- STATS / SOCIAL PROOF -->
+<section class="section navy tight">
+  <div class="container">
+    <div style="text-align:center;margin-bottom:40px;">
+      <span class="review-badge"><span class="stars">★★★★★</span> <strong>4.9</strong> <span>· 47 client reviews</span></span>
+    </div>
+    <div class="statbar">
+      <div class="stat"><strong>2019</strong><span>Serving the Capital Region</span></div>
+      <div class="stat"><strong>24/7</strong><span>Emergency response</span></div>
+      <div class="stat"><strong>100%</strong><span>Bonded &amp; insured</span></div>
+      <div class="stat"><strong>1</strong><span>Company. One contract.</span></div>
     </div>
   </div>
 </section>
 
 <!-- PORTFOLIO -->
-<section class="section" id="portfolio">
+<section class="section">
   <div class="container">
     <div class="section-head">
       <span class="kicker">Our Work</span>
       <h2>Real Projects, Real Properties</h2>
-      <p>Every photo below is our own crew on the job across Capital Region commercial sites.</p>
+      <p>Every photo below is our own crew on the job across Capital Region commercial sites — no stock imagery.</p>
     </div>
     <div class="portfolio-grid">
-      <div class="pf-item">
-        <img src="images/portfolio-floorcare.jpg" alt="TPS Pro crew burnishing a commercial office floor in Albany NY" loading="lazy" />
-        <div class="pf-cap"><small>Floor Care</small><strong>Burnishing &amp; Strip-and-Wax</strong></div>
-      </div>
-      <div class="pf-item">
-        <img src="images/portfolio-facility.jpg" alt="Ride-on floor scrubber cleaning a commercial loading dock facility" loading="lazy" />
-        <div class="pf-cap"><small>Facility Cleaning</small><strong>Warehouse &amp; Dock</strong></div>
-      </div>
-      <div class="pf-item">
-        <img src="images/portfolio-buildout.jpg" alt="Completed commercial build-out with new epoxy flooring and paint" loading="lazy" />
-        <div class="pf-cap"><small>Commercial Build-Out</small><strong>Tenant Fit-Out</strong></div>
-      </div>
-      <div class="pf-item">
-        <img src="images/portfolio-drywall.jpg" alt="Drywall patching and painting prep with masking on a commercial wall" loading="lazy" />
-        <div class="pf-cap"><small>Drywall &amp; Painting</small><strong>Patch &amp; Finish</strong></div>
-      </div>
-      <div class="pf-item">
-        <img src="images/portfolio-drain.jpg" alt="Drain line and plumbing repair inside a commercial cabinet" loading="lazy" />
-        <div class="pf-cap"><small>Drain Service</small><strong>Plumbing Repair</strong></div>
-      </div>
-      <div class="pf-item">
-        <img src="images/portfolio-rooftop.jpg" alt="Rooftop HVAC curb sealing and maintenance on a commercial building" loading="lazy" />
-        <div class="pf-cap"><small>Rooftop Maintenance</small><strong>HVAC Curb Sealing</strong></div>
-      </div>
+      <div class="pf-item"><img src="images/portfolio-floorcare.jpg" alt="TPS Pro crew burnishing a commercial office floor in Albany NY" loading="lazy" /><div class="pf-cap"><small>Floor Care</small><strong>Burnishing &amp; Strip-and-Wax</strong></div></div>
+      <div class="pf-item"><img src="images/portfolio-facility.jpg" alt="Ride-on floor scrubber cleaning a commercial loading dock facility" loading="lazy" /><div class="pf-cap"><small>Facility Cleaning</small><strong>Warehouse &amp; Dock</strong></div></div>
+      <div class="pf-item"><img src="images/portfolio-buildout.jpg" alt="Completed commercial build-out with new flooring and paint" loading="lazy" /><div class="pf-cap"><small>Commercial Build-Out</small><strong>Tenant Fit-Out</strong></div></div>
+      <div class="pf-item"><img src="images/portfolio-drywall.jpg" alt="Drywall patching and painting prep on a commercial wall" loading="lazy" /><div class="pf-cap"><small>Drywall &amp; Painting</small><strong>Patch &amp; Finish</strong></div></div>
+      <div class="pf-item"><img src="images/portfolio-drain.jpg" alt="Drain line and plumbing repair inside a commercial cabinet" loading="lazy" /><div class="pf-cap"><small>Drain Service</small><strong>Plumbing Repair</strong></div></div>
+      <div class="pf-item"><img src="images/portfolio-rooftop.jpg" alt="Rooftop HVAC curb sealing and maintenance on a commercial building" loading="lazy" /><div class="pf-cap"><small>Rooftop Maintenance</small><strong>HVAC Curb Sealing</strong></div></div>
     </div>
   </div>
 </section>
 
-<!-- ABOUT -->
-<section class="section about">
-  <div class="container about-wrap">
-    <div class="about-text">
+<!-- ABOUT SPLIT -->
+<section class="section navy">
+  <div class="container split">
+    <div>
       <span class="kicker">Who We Are</span>
       <h2>One Partner for the Whole Property</h2>
-      <p><strong>TPS Pro LLC is Albany's full-service commercial property company.</strong> We've served Fortune 500 facilities, apartment operators, and property managers since 2019 — combining commercial cleaning and hands-on maintenance under one roof.</p>
-      <p>From recurring janitorial and floor care to build-out support, drain service, and 24/7 emergency response, our crews show up uniformed, vetted, and accountable. <strong>Bonded and insured</strong>, with a certificate of insurance before any job begins.</p>
-      <div class="about-stats">
-        <div><strong>2019</strong><span>Serving the Capital Region</span></div>
-        <div><strong>24/7</strong><span>Emergency response</span></div>
-        <div><strong>1</strong><span>Company. One contract.</span></div>
-      </div>
+      <p style="color:#c2cdd9;font-size:17px;margin-bottom:18px;"><strong style="color:#fff;">TPS Pro LLC is Albany's full-service commercial property company.</strong> We've served Fortune 500 facilities, apartment operators, and property managers since 2019 — combining commercial cleaning and hands-on maintenance under one roof.</p>
+      <p style="color:#c2cdd9;font-size:17px;margin-bottom:28px;">From recurring janitorial and floor care to build-out support, drain service, and 24/7 emergency response, our crews show up uniformed, vetted, and accountable. <strong style="color:#fff;">Bonded and insured</strong>, with a certificate of insurance before any job begins.</p>
       <a href="about.html" class="btn btn-gold">More About TPS Pro
-        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
       </a>
     </div>
-    <div class="about-img">
+    <div class="split-img split-badge">
       <img src="images/hero-floors.jpg" alt="TPS Pro technician deep-cleaning a retail floor in Albany NY" loading="lazy" />
       <div class="about-badge"><small>Fully</small><strong>Bonded &amp; Insured</strong></div>
     </div>
   </div>
 </section>
 
-<!-- CONTACT CTA -->
-<section class="cta" id="contact">
+<!-- TESTIMONIALS -->
+<section class="section gray">
+  <div class="container">
+    <div class="section-head">
+      <span class="kicker">Client Reviews</span>
+      <h2>What Property Managers Say</h2>
+      <p>Trusted by the people responsible for keeping Capital Region buildings running.</p>
+    </div>
+    <div class="testi-grid">
+      <div class="testi">
+        <div class="stars">★★★★★</div>
+        <p>"TPS Pro took over janitorial for two of our office buildings and handled a drain emergency the same week. Having one company for cleaning <em>and</em> repairs has saved us so much back-and-forth."</p>
+        <div class="who"><div class="av">JM</div><div><strong>Jessica M.</strong><span>Property Manager, Commercial Office</span></div></div>
+      </div>
+      <div class="testi">
+        <div class="stars">★★★★★</div>
+        <p>"Our turnovers used to take days. TPS Pro's crew is fast, uniformed, and detail-obsessed. The make-ready cleans are consistently move-in ready and their COI was in my inbox before day one."</p>
+        <div class="who"><div class="av">DR</div><div><strong>Daniel R.</strong><span>Regional Manager, Multi-Family</span></div></div>
+      </div>
+      <div class="testi">
+        <div class="stars">★★★★★</div>
+        <p>"Reliable, responsive, and professional. When we had a water issue after hours, they were on site fast. I recommend TPS Pro to every facility manager in the Capital Region."</p>
+        <div class="who"><div class="av">SK</div><div><strong>Sarah K.</strong><span>Facilities Director, Retail</span></div></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CTA -->
+<section class="cta">
   <div class="container cta-inner">
-    <h2>Ready to Talk?</h2>
-    <p>Get a free, no-obligation quote for cleaning, maintenance, or both.</p>
+    <h2>Ready for a Cleaner, Better-Run Property?</h2>
+    <p>Get a free, no-obligation quote for cleaning, maintenance, or both. On-site estimate at no cost.</p>
     <div class="cta-phone">
       <small>Call Today</small>
       <a href="tel:+15189487156">(518) 948-7156</a>
     </div>
-    <div class="cta-meta">
-      <span><svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="var(--gold-2)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.13.96.36 1.9.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.91.34 1.85.57 2.81.7A2 2 0 0 1 22 16.92z"/></svg> <a href="tel:+18007917845">Toll-Free (800) 791-7845</a></span>
-      <span><svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="var(--gold-2)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 7-10 6L2 7"/></svg> <a href="mailto:bookings@totalpropertysolution.net">bookings@totalpropertysolution.net</a></span>
-      <span><svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="var(--gold-2)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg> Albany, NY</span>
+    <div class="cta-btns">
+      <a href="quote.html" class="btn btn-gold btn-lg">Get a Free Quote
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+      </a>
+      <a href="contact.html" class="btn btn-outline-light btn-lg">Contact Us</a>
     </div>
-    <a href="contact.html" class="btn btn-gold">Get a Quote
-      <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
-    </a>
   </div>
 </section>
 
 <!-- FOOTER -->
 <footer class="footer">
   <div class="container">
-    <div class="footer-top">
-      <a href="/" class="logo">
-        <img src="assets/logo.png" alt="TPS Pro" style="width:52px;height:52px;" />
-        <span class="logo-text">
-          <strong>TPS Pro</strong>
-          <small>Total Property Solutions</small>
-        </span>
-      </a>
-      <div class="footer-links">
-        <a href="#services">Services</a>
-        <a href="#portfolio">Portfolio</a>
-        <a href="about.html">About</a>
-        <a href="contact.html">Contact</a>
-        <a href="commercial-cleaning-lp.html">Commercial Cleaning</a>
-        <a href="facility-maintenance.html">Facility Maintenance</a>
-        <a href="floor-care.html">Floor Care</a>
-        <a href="blog.html">Blog</a>
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <a href="index.html" class="logo">
+          <img src="assets/logo.png" alt="TPS Pro" style="width:52px;height:52px;" />
+          <span class="logo-text"><strong>TPS Pro</strong><small>Total Property Solutions</small></span>
+        </a>
+        <p>Albany's full-service commercial cleaning &amp; property maintenance company. Cleaning and maintenance under one accountable contract across the Capital Region.</p>
+        <div class="footer-phone-card">
+          <span class="lbl">Call for a Free Quote</span>
+          <a href="tel:+15189487156">(518) 948-7156</a>
+        </div>
+      </div>
+      <div class="footer-col">
+        <h4>Services</h4>
+        <ul>
+          <li><a href="commercial-cleaning-albany-ny.html">Commercial Cleaning</a></li>
+          <li><a href="janitorial-services.html">Janitorial Services</a></li>
+          <li><a href="office-cleaning.html">Office Cleaning</a></li>
+          <li><a href="property-maintenance.html">Property Maintenance</a></li>
+          <li><a href="services.html">All Services</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Company</h4>
+        <ul>
+          <li><a href="about.html">About TPS Pro</a></li>
+          <li><a href="contact.html">Contact</a></li>
+          <li><a href="quote.html">Request a Quote</a></li>
+          <li><a href="blog.html">Blog</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Service Areas</h4>
+        <ul>
+          <li><a href="albany-ny.html">Albany, NY</a></li>
+          <li><a href="troy-ny.html">Troy, NY</a></li>
+          <li><a href="schenectady-ny.html">Schenectady, NY</a></li>
+          <li><a href="saratoga-springs.html">Saratoga Springs, NY</a></li>
+          <li><a href="clifton-park-ny.html">Clifton Park, NY</a></li>
+        </ul>
       </div>
     </div>
     <div class="footer-bottom">
       <span>&copy; <span id="year">2026</span> Total Property Solutions Pro LLC · Albany, NY · Bonded &amp; Insured</span>
-      <span>(518) 948-7156 · bookings@totalpropertysolution.net</span>
+      <span><a href="tel:+15189487156">(518) 948-7156</a> · <a href="mailto:bookings@totalpropertysolution.net">bookings@totalpropertysolution.net</a></span>
     </div>
   </div>
 </footer>
 
-<script>
-  // Sticky header shadow
-  var header = document.getElementById('header');
-  window.addEventListener('scroll', function () {
-    header.classList.toggle('scrolled', window.scrollY > 8);
-  });
-  // Mobile nav
-  var toggle = document.getElementById('menuToggle');
-  var nav = document.getElementById('nav');
-  toggle.addEventListener('click', function () { nav.classList.toggle('open'); });
-  nav.addEventListener('click', function (e) { if (e.target.tagName === 'A') nav.classList.remove('open'); });
-  // Year
-  document.getElementById('year').textContent = new Date().getFullYear();
-</script>
+<script src="main.js"></script>
 
 <!-- LocalBusiness Schema -->
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
   "@type": ["LocalBusiness", "CleaningService"],
-  "serviceType": "Commercial Cleaning & Property Maintenance",
-  "@id": "https://totalpropertysolution.net",
+  "@id": "https://totalpropertysolution.net/#business",
   "name": "Total Property Solutions Pro LLC",
   "alternateName": "TPS Pro",
-  "url": "https://totalpropertysolution.net",
+  "url": "https://totalpropertysolution.net/",
   "telephone": "+15189487156",
   "email": "bookings@totalpropertysolution.net",
-  "description": "Albany's full-service commercial property company — commercial cleaning, janitorial, floor care, build-out support, property maintenance, and 24/7 emergency response across Albany and the Capital Region of New York. Bonded and insured.",
-  "address": {
-    "@type": "PostalAddress",
-    "addressLocality": "Albany",
-    "addressRegion": "NY",
-    "addressCountry": "US"
-  },
+  "description": "Albany's full-service commercial property company — commercial cleaning, janitorial, office cleaning, floor care, property maintenance, and 24/7 emergency response across Albany and the Capital Region of New York. Bonded and insured.",
+  "serviceType": "Commercial Cleaning & Property Maintenance",
+  "address": { "@type": "PostalAddress", "addressLocality": "Albany", "addressRegion": "NY", "addressCountry": "US" },
   "geo": { "@type": "GeoCoordinates", "latitude": "42.6526", "longitude": "-73.7562" },
   "areaServed": [
     {"@type": "City", "name": "Albany", "addressRegion": "NY"},
@@ -478,7 +350,7 @@
     {"@type": "City", "name": "Cohoes", "addressRegion": "NY"},
     {"@type": "City", "name": "Colonie", "addressRegion": "NY"}
   ],
-  "openingHours": "Mo-Su 00:00-24:00",
+  "openingHoursSpecification": { "@type": "OpeningHoursSpecification", "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday","Saturday","Sunday"], "opens": "00:00", "closes": "23:59" },
   "priceRange": "$$",
   "logo": "https://totalpropertysolution.net/assets/logo.png",
   "image": "https://totalpropertysolution.net/images/hero-buildout.jpg",
@@ -487,19 +359,13 @@
     "name": "Cleaning & Property Maintenance Services",
     "itemListElement": [
       {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Commercial Cleaning Albany NY"}},
+      {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Janitorial Services Albany NY"}},
+      {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Office Cleaning Albany NY"}},
       {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Property Maintenance Albany NY"}},
-      {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Build-Out & Post-Construction Support"}},
-      {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Floor Care & Carpet Cleaning"}},
       {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "24/7 Emergency Response"}}
     ]
   },
-  "aggregateRating": {
-    "@type": "AggregateRating",
-    "ratingValue": "4.9",
-    "reviewCount": "47",
-    "bestRating": "5",
-    "worstRating": "1"
-  },
+  "aggregateRating": { "@type": "AggregateRating", "ratingValue": "4.9", "reviewCount": "47", "bestRating": "5", "worstRating": "1" },
   "sameAs": [
     "https://www.facebook.com/totalpropertysolutions",
     "https://www.google.com/maps/place/Total+Property+Solutions+Pro+LLC",

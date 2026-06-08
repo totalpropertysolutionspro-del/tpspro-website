@@ -1,32 +1,49 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-  <url><loc>https://totalpropertysolution.net/</loc><lastmod>2026-05-29</lastmod><changefreq>weekly</changefreq><priority>1.0</priority></url>
-  <url><loc>https://totalpropertysolution.net/about.html</loc><lastmod>2026-05-29</lastmod><changefreq>monthly</changefreq><priority>0.9</priority></url>
-  <url><loc>https://totalpropertysolution.net/contact.html</loc><lastmod>2026-05-29</lastmod><changefreq>monthly</changefreq><priority>0.9</priority></url>
-  <url><loc>https://totalpropertysolution.net/janitorial-services.html</loc><lastmod>2026-05-29</lastmod><changefreq>monthly</changefreq><priority>0.9</priority></url>
-  <url><loc>https://totalpropertysolution.net/student-turnover-cleaning.html</loc><lastmod>2026-05-29</lastmod><changefreq>monthly</changefreq><priority>0.9</priority></url>
-  <url><loc>https://totalpropertysolution.net/make-ready-cleaning.html</loc><lastmod>2026-05-29</lastmod><changefreq>monthly</changefreq><priority>0.9</priority></url>
-  <url><loc>https://totalpropertysolution.net/post-construction-cleaning.html</loc><lastmod>2026-05-29</lastmod><changefreq>monthly</changefreq><priority>0.9</priority></url>
-  <url><loc>https://totalpropertysolution.net/renovation-cleaning.html</loc><lastmod>2026-05-29</lastmod><changefreq>monthly</changefreq><priority>0.9</priority></url>
-  <url><loc>https://totalpropertysolution.net/airbnb-cleaning.html</loc><lastmod>2026-05-29</lastmod><changefreq>monthly</changefreq><priority>0.9</priority></url>
-  <url><loc>https://totalpropertysolution.net/floor-care.html</loc><lastmod>2026-05-29</lastmod><changefreq>monthly</changefreq><priority>0.9</priority></url>
-  <url><loc>https://totalpropertysolution.net/facility-maintenance.html</loc><lastmod>2026-05-29</lastmod><changefreq>monthly</changefreq><priority>0.9</priority></url>
-  <url><loc>https://totalpropertysolution.net/albany-ny.html</loc><lastmod>2026-05-29</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
-  <url><loc>https://totalpropertysolution.net/saratoga-county.html</loc><lastmod>2026-05-29</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
-  <url><loc>https://totalpropertysolution.net/saratoga-springs.html</loc><lastmod>2026-05-29</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
-  <url><loc>https://totalpropertysolution.net/troy-ny.html</loc><lastmod>2026-05-29</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
-  <url><loc>https://totalpropertysolution.net/schenectady-ny.html</loc><lastmod>2026-05-29</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
-  <url><loc>https://totalpropertysolution.net/cohoes-ny.html</loc><lastmod>2026-05-29</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
-  <url><loc>https://totalpropertysolution.net/clifton-park-ny.html</loc><lastmod>2026-05-29</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
-  <url><loc>https://totalpropertysolution.net/ballston-spa-ny.html</loc><lastmod>2026-05-29</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
-  <url><loc>https://totalpropertysolution.net/glens-falls-ny.html</loc><lastmod>2026-05-29</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
-  <url><loc>https://totalpropertysolution.net/faq.html</loc><lastmod>2026-05-29</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
-  <url><loc>https://totalpropertysolution.net/blog.html</loc><lastmod>2026-05-29</lastmod><changefreq>weekly</changefreq><priority>0.7</priority></url>
-  <url><loc>https://totalpropertysolution.net/blog-student-turnover-cost.html</loc><lastmod>2026-05-29</lastmod><changefreq>monthly</changefreq><priority>0.6</priority></url>
-  <url><loc>https://totalpropertysolution.net/blog-commercial-cleaning-saratoga.html</loc><lastmod>2026-05-29</lastmod><changefreq>monthly</changefreq><priority>0.6</priority></url>
-  <url><loc>https://totalpropertysolution.net/blog-property-manager-cleaning-guide.html</loc><lastmod>2026-05-29</lastmod><changefreq>monthly</changefreq><priority>0.6</priority></url>
-  <url><loc>https://totalpropertysolution.net/blog-commercial-cleaning-cost-albany.html</loc><lastmod>2026-05-29</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
-  <url><loc>https://totalpropertysolution.net/blog-make-ready-cleaning-guide.html</loc><lastmod>2026-05-29</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
-  <url><loc>https://totalpropertysolution.net/blog-post-construction-cleaning-what-to-expect.html</loc><lastmod>2026-05-29</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
-  <url><loc>https://totalpropertysolution.net/blog-choose-commercial-cleaning-company-albany.html</loc><lastmod>2026-06-02</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+
+  <!-- Core pages (rebuilt) -->
+  <url><loc>https://totalpropertysolution.net/</loc><lastmod>2026-06-08</lastmod><changefreq>weekly</changefreq><priority>1.0</priority></url>
+  <url><loc>https://totalpropertysolution.net/services.html</loc><lastmod>2026-06-08</lastmod><changefreq>monthly</changefreq><priority>0.9</priority></url>
+  <url><loc>https://totalpropertysolution.net/quote.html</loc><lastmod>2026-06-08</lastmod><changefreq>monthly</changefreq><priority>0.9</priority></url>
+  <url><loc>https://totalpropertysolution.net/about.html</loc><lastmod>2026-06-08</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://totalpropertysolution.net/contact.html</loc><lastmod>2026-06-08</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
+
+  <!-- Service landing pages -->
+  <url><loc>https://totalpropertysolution.net/commercial-cleaning-albany-ny.html</loc><lastmod>2026-06-08</lastmod><changefreq>monthly</changefreq><priority>0.9</priority></url>
+  <url><loc>https://totalpropertysolution.net/janitorial-services.html</loc><lastmod>2026-06-08</lastmod><changefreq>monthly</changefreq><priority>0.9</priority></url>
+  <url><loc>https://totalpropertysolution.net/office-cleaning.html</loc><lastmod>2026-06-08</lastmod><changefreq>monthly</changefreq><priority>0.9</priority></url>
+  <url><loc>https://totalpropertysolution.net/property-maintenance.html</loc><lastmod>2026-06-08</lastmod><changefreq>monthly</changefreq><priority>0.9</priority></url>
+  <url><loc>https://totalpropertysolution.net/floor-care.html</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://totalpropertysolution.net/facility-maintenance.html</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://totalpropertysolution.net/post-construction-cleaning.html</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://totalpropertysolution.net/renovation-cleaning.html</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://totalpropertysolution.net/make-ready-cleaning.html</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://totalpropertysolution.net/student-turnover-cleaning.html</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://totalpropertysolution.net/airbnb-cleaning.html</loc><changefreq>monthly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://totalpropertysolution.net/property-manager-cleaning-albany-ny.html</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+
+  <!-- Location pages -->
+  <url><loc>https://totalpropertysolution.net/albany-ny.html</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://totalpropertysolution.net/troy-ny.html</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://totalpropertysolution.net/schenectady-ny.html</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://totalpropertysolution.net/saratoga-springs.html</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://totalpropertysolution.net/saratoga-county.html</loc><changefreq>monthly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://totalpropertysolution.net/clifton-park-ny.html</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://totalpropertysolution.net/cohoes-ny.html</loc><changefreq>monthly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://totalpropertysolution.net/glens-falls-ny.html</loc><changefreq>monthly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://totalpropertysolution.net/ballston-spa-ny.html</loc><changefreq>monthly</changefreq><priority>0.6</priority></url>
+
+  <!-- Blog -->
+  <url><loc>https://totalpropertysolution.net/blog.html</loc><changefreq>weekly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://totalpropertysolution.net/blog-choose-commercial-cleaning-company-albany.html</loc><changefreq>monthly</changefreq><priority>0.5</priority></url>
+  <url><loc>https://totalpropertysolution.net/blog-commercial-cleaning-cost-albany.html</loc><changefreq>monthly</changefreq><priority>0.5</priority></url>
+  <url><loc>https://totalpropertysolution.net/blog-commercial-cleaning-saratoga.html</loc><changefreq>monthly</changefreq><priority>0.5</priority></url>
+  <url><loc>https://totalpropertysolution.net/blog-make-ready-cleaning-guide.html</loc><changefreq>monthly</changefreq><priority>0.5</priority></url>
+  <url><loc>https://totalpropertysolution.net/blog-post-construction-cleaning-what-to-expect.html</loc><changefreq>monthly</changefreq><priority>0.5</priority></url>
+  <url><loc>https://totalpropertysolution.net/blog-property-manager-cleaning-guide.html</loc><changefreq>monthly</changefreq><priority>0.5</priority></url>
+  <url><loc>https://totalpropertysolution.net/blog-student-turnover-cost.html</loc><changefreq>monthly</changefreq><priority>0.5</priority></url>
+
+  <!-- Other -->
+  <url><loc>https://totalpropertysolution.net/faq.html</loc><changefreq>monthly</changefreq><priority>0.6</priority></url>
+
 </urlset>
