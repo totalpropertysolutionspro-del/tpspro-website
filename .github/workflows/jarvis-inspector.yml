@@ -1,0 +1,42 @@
+name: JARVIS inspector
+
+# The crew's weekly standup: deep-audits every page, merges the Scout's
+# competitor intel (from jarvis-app), commits the task ledger, and posts the
+# report as a GitHub Issue so Miguel gets one readable weekly briefing.
+on:
+  schedule:
+    - cron: '0 12 * * 2' # Tuesdays 12:00 UTC (~8am ET), day after the Scout runs
+  workflow_dispatch: {}
+
+permissions:
+  contents: write
+  issues: write
+
+jobs:
+  inspect:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+      - name: Run inspector
+        run: node jarvis/inspector.mjs
+      - name: Commit ledger
+        run: |
+          git config user.name "JARVIS Agent"
+          git config user.email "jarvis@totalpropertysolution.net"
+          git add jarvis/
+          git diff --cached --quiet || git commit -m "jarvis: weekly inspection $(date -u +%F)"
+          git push
+      - name: Post weekly report issue
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          TITLE="🤖 JARVIS Crew — weekly report $(date -u +%F)"
+          EXISTING=$(gh issue list --state open --search "JARVIS Crew — weekly report in:title" --json number --jq '.[0].number' || true)
+          if [ -n "$EXISTING" ] && [ "$EXISTING" != "null" ]; then
+            gh issue edit "$EXISTING" --title "$TITLE" --body-file jarvis/report.md
+          else
+            gh issue create --title "$TITLE" --body-file jarvis/report.md
+          fi

@@ -1,0 +1,30 @@
+name: JARVIS season rotator
+
+# The crew's hands: rotates the homepage seasonal strip with the Albany
+# services calendar. Touches only the marked block in index.html.
+on:
+  schedule:
+    - cron: '0 10 1 * *' # 1st of each month, 10:00 UTC
+  workflow_dispatch: {}
+
+permissions:
+  contents: write
+
+jobs:
+  rotate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+      - name: Rotate seasonal strip
+        run: node jarvis/season-rotator.mjs
+      - name: Commit if changed
+        run: |
+          git config user.name "JARVIS Agent"
+          git config user.email "jarvis@totalpropertysolution.net"
+          git add index.html
+          git diff --cached --quiet && echo "no rotation needed" && exit 0
+          git commit -m "jarvis: seasonal strip rotation $(date -u +%F)"
+          git push
