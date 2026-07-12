@@ -1,12 +1,12 @@
 {
-  "generatedAt": "2026-07-12T22:49:47.871Z",
+  "generatedAt": "2026-07-12T22:56:10.893Z",
   "tasks": [
     {
       "page": "index.html",
       "sev": "med",
       "type": "content-depth",
       "owner": "content",
-      "detail": "~751 words vs field avg ~1370 — deepen with scope details, FAQs, local specifics"
+      "detail": "~780 words vs field avg ~1370 — deepen with scope details, FAQs, local specifics"
     },
     {
       "page": "student-turnover-cleaning.html",
@@ -42,6 +42,13 @@
       "type": "content-depth",
       "owner": "content",
       "detail": "~348 words vs field avg ~1370 — deepen with scope details, FAQs, local specifics"
+    },
+    {
+      "page": "index.html",
+      "sev": "low",
+      "type": "img-alt",
+      "owner": "human",
+      "detail": "1 <img> without alt"
     }
   ]
 }
