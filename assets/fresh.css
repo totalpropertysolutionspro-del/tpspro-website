@@ -237,6 +237,21 @@ p { margin: 0 0 14px; }
 }
 .stat .l { font-size: 14px; font-weight: 700; color: #C9DAC5; margin-top: 8px; letter-spacing: .04em; }
 
+/* ---------- trusted-by / client logo wall ---------- */
+.client-strip { display: flex; flex-wrap: wrap; justify-content: center; gap: 14px 30px; margin: 6px 0 4px; }
+.client-strip .c {
+  font-family: var(--display); font-weight: 700; font-size: clamp(15px, 2vw, 20px);
+  letter-spacing: .04em; text-transform: uppercase; color: var(--ink-faint);
+  opacity: .85; white-space: nowrap;
+}
+.logos { display: grid; grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); gap: 18px; align-items: center; margin: 6px 0; }
+.logos .logo-cell {
+  display: flex; align-items: center; justify-content: center; padding: 18px 16px;
+  background: var(--card); border: 1px solid var(--line); border-radius: 10px; min-height: 92px;
+}
+.logos .logo-cell img { max-width: 100%; max-height: 56px; width: auto; filter: grayscale(1); opacity: .78; transition: filter .2s ease, opacity .2s ease; }
+.logos .logo-cell:hover img { filter: none; opacity: 1; }
+
 /* ---------- reviews ---------- */
 .reviews { display: grid; grid-template-columns: repeat(auto-fit, minmax(285px, 1fr)); gap: 18px; }
 .review { background: var(--card); border: 1px solid var(--line); border-radius: var(--radius); padding: 24px 22px 20px; box-shadow: var(--shadow-1); }
