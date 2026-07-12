@@ -1,26 +1,12 @@
 {
-  "generatedAt": "2026-07-12T22:49:02.955Z",
+  "generatedAt": "2026-07-12T22:49:47.871Z",
   "tasks": [
-    {
-      "page": "index.html",
-      "sev": "high",
-      "type": "broken-link",
-      "owner": "human",
-      "detail": "broken ref: assets/clients/client-1.png"
-    },
-    {
-      "page": "index.html",
-      "sev": "high",
-      "type": "broken-link",
-      "owner": "human",
-      "detail": "broken ref: assets/clients/client-2.png"
-    },
     {
       "page": "index.html",
       "sev": "med",
       "type": "content-depth",
       "owner": "content",
-      "detail": "~758 words vs field avg ~1370 — deepen with scope details, FAQs, local specifics"
+      "detail": "~751 words vs field avg ~1370 — deepen with scope details, FAQs, local specifics"
     },
     {
       "page": "student-turnover-cleaning.html",

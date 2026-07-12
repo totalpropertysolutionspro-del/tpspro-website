@@ -1,14 +1,10 @@
 # JARVIS Crew — weekly inspection 2026-07-12
 
-Pages audited: **43** · findings: **8** (2 high / 6 med / 0 low)
+Pages audited: **43** · findings: **6** (0 high / 6 med / 0 low)
 Scout intel: merged (snapshot 2026-07-12)
 
-## HIGH (2)
-- `index.html` **broken-link** → _human_ — broken ref: assets/clients/client-1.png
-- `index.html` **broken-link** → _human_ — broken ref: assets/clients/client-2.png
-
 ## MED (6)
-- `index.html` **content-depth** → _content_ — ~758 words vs field avg ~1370 — deepen with scope details, FAQs, local specifics
+- `index.html` **content-depth** → _content_ — ~751 words vs field avg ~1370 — deepen with scope details, FAQs, local specifics
 - `student-turnover-cleaning.html` **content-depth** → _content_ — ~693 words vs field avg ~1370 — deepen with scope details, FAQs, local specifics
 - `commercial-cleaning-albany-ny.html` **content-depth** → _content_ — ~837 words vs field avg ~1370 — deepen with scope details, FAQs, local specifics
 - `post-construction-cleaning.html` **content-depth** → _content_ — ~576 words vs field avg ~1370 — deepen with scope details, FAQs, local specifics
