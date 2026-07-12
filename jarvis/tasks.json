@@ -1,4 +1,47 @@
 {
-  "generatedAt": "2026-07-12T20:49:36.245Z",
-  "tasks": []
+  "generatedAt": "2026-07-12T22:39:27.763Z",
+  "tasks": [
+    {
+      "page": "index.html",
+      "sev": "med",
+      "type": "content-depth",
+      "owner": "content",
+      "detail": "~700 words vs field avg ~1370 — deepen with scope details, FAQs, local specifics"
+    },
+    {
+      "page": "student-turnover-cleaning.html",
+      "sev": "med",
+      "type": "content-depth",
+      "owner": "content",
+      "detail": "~693 words vs field avg ~1370 — deepen with scope details, FAQs, local specifics"
+    },
+    {
+      "page": "commercial-cleaning-albany-ny.html",
+      "sev": "med",
+      "type": "content-depth",
+      "owner": "content",
+      "detail": "~837 words vs field avg ~1370 — deepen with scope details, FAQs, local specifics"
+    },
+    {
+      "page": "post-construction-cleaning.html",
+      "sev": "med",
+      "type": "content-depth",
+      "owner": "content",
+      "detail": "~576 words vs field avg ~1370 — deepen with scope details, FAQs, local specifics"
+    },
+    {
+      "page": "property-management.html",
+      "sev": "med",
+      "type": "content-depth",
+      "owner": "content",
+      "detail": "~401 words vs field avg ~1370 — deepen with scope details, FAQs, local specifics"
+    },
+    {
+      "page": "renovations-construction.html",
+      "sev": "med",
+      "type": "content-depth",
+      "owner": "content",
+      "detail": "~348 words vs field avg ~1370 — deepen with scope details, FAQs, local specifics"
+    }
+  ]
 }

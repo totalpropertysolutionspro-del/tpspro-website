@@ -1,0 +1,13 @@
+name = "tps-lead"
+main = "lead-worker.js"
+compatibility_date = "2026-07-01"
+
+[vars]
+LEAD_TO = "crcp183@gmail.com"
+LEAD_FROM = "leads@totalpropertysolution.net"
+ALLOW_ORIGIN = "https://totalpropertysolution.net"
+
+# Custom domain route (optional but recommended): after `wrangler deploy`, add a
+# route in the Cloudflare dashboard (Workers & Pages → tps-lead → Settings →
+# Domains & Routes) for  lead.totalpropertysolution.net  — then set
+# window.TPS_LEAD_ENDPOINT = 'https://lead.totalpropertysolution.net' in fresh.js.

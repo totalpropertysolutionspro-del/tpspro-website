@@ -10,7 +10,7 @@ import { readFile, writeFile } from 'node:fs/promises';
 
 const SEASONS = [
   { months: [5, 6, 7, 8], // May–Aug: turn season
-    html: `  <b>Turn season is here.</b> We turn 200+ student units every summer — <a href="student-turnover-cleaning.html">reserve your August turn window now</a>` },
+    html: `  <b>Turn season is here.</b> We turn 800+ student units a turn — <a href="student-turnover-cleaning.html">reserve your August turn window now</a>` },
   { months: [9, 10, 11], // Sep–Nov: fall projects
     html: `  <b>Renovation season.</b> Book fall buildouts &amp; post-construction cleans before the holidays — <a href="renovations-construction.html">start your project</a>` },
   { months: [12, 1, 2], // Dec–Feb: winter contracts
