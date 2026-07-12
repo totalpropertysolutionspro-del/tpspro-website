@@ -179,8 +179,12 @@ p { margin: 0 0 14px; }
 .section.on-pine p { color: #C9DAC5; }
 .section.tint { background: var(--mint); }
 
-/* ---------- the three doors ---------- */
+/* ---------- the service doors ---------- */
 .doors { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 20px; }
+/* four doors: always a balanced 2x2 on desktop, never 3+1 */
+@media (min-width: 720px) {
+  .doors:has(> :nth-child(4)) { grid-template-columns: repeat(2, 1fr); }
+}
 .door {
   position: relative; background: var(--card); border: 1px solid var(--line);
   border-radius: var(--radius); overflow: hidden; box-shadow: var(--shadow-1);
