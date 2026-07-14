@@ -1,12 +1,40 @@
 {
-  "generatedAt": "2026-07-12T23:34:32.171Z",
+  "generatedAt": "2026-07-14T13:06:17.960Z",
   "tasks": [
+    {
+      "page": "about.html",
+      "sev": "med",
+      "type": "meta",
+      "owner": "fixer",
+      "detail": "description 755 chars (band 100-170)"
+    },
+    {
+      "page": "faq.html",
+      "sev": "med",
+      "type": "meta",
+      "owner": "fixer",
+      "detail": "description 261 chars (band 100-170)"
+    },
+    {
+      "page": "index.html",
+      "sev": "med",
+      "type": "meta",
+      "owner": "fixer",
+      "detail": "description 310 chars (band 100-170)"
+    },
+    {
+      "page": "services.html",
+      "sev": "med",
+      "type": "meta",
+      "owner": "fixer",
+      "detail": "description 432 chars (band 100-170)"
+    },
     {
       "page": "index.html",
       "sev": "med",
       "type": "content-depth",
       "owner": "content",
-      "detail": "~824 words vs field avg ~1370 — deepen with scope details, FAQs, local specifics"
+      "detail": "~822 words vs field avg ~1370 — deepen with scope details, FAQs, local specifics"
     },
     {
       "page": "student-turnover-cleaning.html",

@@ -1,10 +1,14 @@
-# JARVIS Crew — weekly inspection 2026-07-12
+# JARVIS Crew — weekly inspection 2026-07-14
 
-Pages audited: **43** · findings: **7** (0 high / 6 med / 1 low)
-Scout intel: merged (snapshot 2026-07-12)
+Pages audited: **43** · findings: **11** (0 high / 10 med / 1 low)
+Scout intel: merged (snapshot 2026-07-13)
 
-## MED (6)
-- `index.html` **content-depth** → _content_ — ~824 words vs field avg ~1370 — deepen with scope details, FAQs, local specifics
+## MED (10)
+- `about.html` **meta** → _fixer_ — description 755 chars (band 100-170)
+- `faq.html` **meta** → _fixer_ — description 261 chars (band 100-170)
+- `index.html` **meta** → _fixer_ — description 310 chars (band 100-170)
+- `services.html` **meta** → _fixer_ — description 432 chars (band 100-170)
+- `index.html` **content-depth** → _content_ — ~822 words vs field avg ~1370 — deepen with scope details, FAQs, local specifics
 - `student-turnover-cleaning.html` **content-depth** → _content_ — ~693 words vs field avg ~1370 — deepen with scope details, FAQs, local specifics
 - `commercial-cleaning-albany-ny.html` **content-depth** → _content_ — ~837 words vs field avg ~1370 — deepen with scope details, FAQs, local specifics
 - `post-construction-cleaning.html` **content-depth** → _content_ — ~576 words vs field avg ~1370 — deepen with scope details, FAQs, local specifics
