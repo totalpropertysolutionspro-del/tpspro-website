@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-07-14T13:06:17.960Z",
+  "generatedAt": "2026-07-21T13:15:20.562Z",
   "tasks": [
     {
       "page": "about.html",
@@ -30,46 +30,53 @@
       "detail": "description 432 chars (band 100-170)"
     },
     {
+      "page": "blog-student-housing-turnover-cleaning-albany.html",
+      "sev": "med",
+      "type": "orphan",
+      "owner": "human",
+      "detail": "no internal links point here"
+    },
+    {
       "page": "index.html",
       "sev": "med",
       "type": "content-depth",
       "owner": "content",
-      "detail": "~822 words vs field avg ~1370 — deepen with scope details, FAQs, local specifics"
+      "detail": "~822 words vs field avg ~1377 — deepen with scope details, FAQs, local specifics"
     },
     {
       "page": "student-turnover-cleaning.html",
       "sev": "med",
       "type": "content-depth",
       "owner": "content",
-      "detail": "~693 words vs field avg ~1370 — deepen with scope details, FAQs, local specifics"
+      "detail": "~693 words vs field avg ~1377 — deepen with scope details, FAQs, local specifics"
     },
     {
       "page": "commercial-cleaning-albany-ny.html",
       "sev": "med",
       "type": "content-depth",
       "owner": "content",
-      "detail": "~837 words vs field avg ~1370 — deepen with scope details, FAQs, local specifics"
+      "detail": "~837 words vs field avg ~1377 — deepen with scope details, FAQs, local specifics"
     },
     {
       "page": "post-construction-cleaning.html",
       "sev": "med",
       "type": "content-depth",
       "owner": "content",
-      "detail": "~576 words vs field avg ~1370 — deepen with scope details, FAQs, local specifics"
+      "detail": "~576 words vs field avg ~1377 — deepen with scope details, FAQs, local specifics"
     },
     {
       "page": "property-management.html",
       "sev": "med",
       "type": "content-depth",
       "owner": "content",
-      "detail": "~401 words vs field avg ~1370 — deepen with scope details, FAQs, local specifics"
+      "detail": "~401 words vs field avg ~1377 — deepen with scope details, FAQs, local specifics"
     },
     {
       "page": "renovations-construction.html",
       "sev": "med",
       "type": "content-depth",
       "owner": "content",
-      "detail": "~348 words vs field avg ~1370 — deepen with scope details, FAQs, local specifics"
+      "detail": "~348 words vs field avg ~1377 — deepen with scope details, FAQs, local specifics"
     },
     {
       "page": "index.html",
