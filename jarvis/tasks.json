@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-25T12:25:41.839Z",
+  "generatedAt": "2026-09-01T15:43:57.990Z",
   "tasks": [
     {
       "page": "about.html",
@@ -37,32 +37,46 @@
       "detail": "no internal links point here"
     },
     {
+      "page": "index.html",
+      "sev": "med",
+      "type": "content-depth",
+      "owner": "content",
+      "detail": "~819 words vs field avg ~1391 — deepen with scope details, FAQs, local specifics"
+    },
+    {
       "page": "student-turnover-cleaning.html",
       "sev": "med",
       "type": "content-depth",
       "owner": "content",
-      "detail": "~693 words vs field avg ~1149 — deepen with scope details, FAQs, local specifics"
+      "detail": "~693 words vs field avg ~1391 — deepen with scope details, FAQs, local specifics"
+    },
+    {
+      "page": "commercial-cleaning-albany-ny.html",
+      "sev": "med",
+      "type": "content-depth",
+      "owner": "content",
+      "detail": "~837 words vs field avg ~1391 — deepen with scope details, FAQs, local specifics"
     },
     {
       "page": "post-construction-cleaning.html",
       "sev": "med",
       "type": "content-depth",
       "owner": "content",
-      "detail": "~576 words vs field avg ~1149 — deepen with scope details, FAQs, local specifics"
+      "detail": "~576 words vs field avg ~1391 — deepen with scope details, FAQs, local specifics"
     },
     {
       "page": "property-management.html",
       "sev": "med",
       "type": "content-depth",
       "owner": "content",
-      "detail": "~401 words vs field avg ~1149 — deepen with scope details, FAQs, local specifics"
+      "detail": "~401 words vs field avg ~1391 — deepen with scope details, FAQs, local specifics"
     },
     {
       "page": "renovations-construction.html",
       "sev": "med",
       "type": "content-depth",
       "owner": "content",
-      "detail": "~348 words vs field avg ~1149 — deepen with scope details, FAQs, local specifics"
+      "detail": "~348 words vs field avg ~1391 — deepen with scope details, FAQs, local specifics"
     },
     {
       "page": "index.html",
