@@ -1,7 +1,7 @@
-# JARVIS Crew — weekly inspection 2026-09-08
+# JARVIS Crew — weekly inspection 2026-09-15
 
 Pages audited: **44** · findings: **12** (0 high / 11 med / 1 low)
-Scout intel: merged (snapshot 2026-09-07)
+Scout intel: merged (snapshot 2026-09-14)
 
 ## MED (11)
 - `about.html` **meta** → _fixer_ — description 755 chars (band 100-170)
