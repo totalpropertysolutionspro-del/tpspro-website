@@ -8,13 +8,18 @@ to your inbox from any device, even if the visitor has no email app set up.
 Everything runs on **your** Cloudflare account (you already use Cloudflare for
 the domain). No FormSubmit, no middleman.
 
-## One-time setup (~10 minutes)
+## One-time setup (~5 minutes, no DNS needed)
 
-1. **Resend account** (free — 3,000 emails/month): sign up at resend.com.
-   - Add & verify the domain `totalpropertysolution.net` (Resend gives you a few
-     DNS records → add them in Cloudflare DNS). This lets the Worker send as
-     `leads@totalpropertysolution.net`.
-   - Create an API key → copy it.
+1. **Resend account** (free — 3,000 emails/month): sign up at resend.com with
+   crcp183@gmail.com.
+   - **Skip domain verification for now.** Resend lets you send FROM
+     `onboarding@resend.dev` TO your own account email (crcp183@gmail.com) with
+     no DNS setup — perfect for getting leads flowing today. (wrangler.toml is
+     already set to this sender.)
+   - Just create an **API key** → copy it. That's the only thing you need.
+   - Optional later: verify totalpropertysolution.net in Resend (add the DNS
+     records in Cloudflare) and change LEAD_FROM in wrangler.toml to
+     leads@totalpropertysolution.net so mail comes from your own domain.
 
 2. **Deploy the Worker** (from this folder):
    ```bash

@@ -4,7 +4,11 @@ compatibility_date = "2026-07-01"
 
 [vars]
 LEAD_TO = "crcp183@gmail.com"
-LEAD_FROM = "leads@totalpropertysolution.net"
+# Zero-setup sender: Resend lets you send FROM onboarding@resend.dev TO your own
+# account email (crcp183@gmail.com) with NO domain verification — just an API key.
+# Later, verify totalpropertysolution.net in Resend and switch this to
+# leads@totalpropertysolution.net so it sends from your own domain.
+LEAD_FROM = "onboarding@resend.dev"
 ALLOW_ORIGIN = "https://totalpropertysolution.net"
 
 # Custom domain route (optional but recommended): after `wrangler deploy`, add a
