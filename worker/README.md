@@ -5,42 +5,38 @@ addressed straight to you (crcp183@gmail.com) — direct, zero third party, work
 today. This Worker is the **upgrade**: form submissions get delivered silently
 to your inbox from any device, even if the visitor has no email app set up.
 
-Everything runs on **your** Cloudflare account (you already use Cloudflare for
-the domain). No FormSubmit, no middleman.
+It runs on **your** Cloudflare account and sends through **Cloudflare Email
+Routing** — the same system that already forwards bookings@totalpropertysolution.net
+to your Gmail. **No Resend, no SendGrid, no signup.** Because crcp183@gmail.com
+is already a verified Email Routing destination, sends work immediately.
 
-## One-time setup (~5 minutes, no DNS needed)
+## Setup — dashboard, ~5 minutes, no command line
 
-1. **Resend account** (free — 3,000 emails/month): sign up at resend.com with
-   crcp183@gmail.com.
-   - **Skip domain verification for now.** Resend lets you send FROM
-     `onboarding@resend.dev` TO your own account email (crcp183@gmail.com) with
-     no DNS setup — perfect for getting leads flowing today. (wrangler.toml is
-     already set to this sender.)
-   - Just create an **API key** → copy it. That's the only thing you need.
-   - Optional later: verify totalpropertysolution.net in Resend (add the DNS
-     records in Cloudflare) and change LEAD_FROM in wrangler.toml to
-     leads@totalpropertysolution.net so mail comes from your own domain.
+1. **Cloudflare dashboard → Workers & Pages → Create → Worker.** Name it
+   `tps-lead`. Paste in the contents of `lead-worker.js`, then Deploy.
+2. **Settings → Bindings → Add → "Send email".**
+   - Variable name: `LEAD_MAIL`
+   - Destination address: `crcp183@gmail.com`
+   (If Cloudflare asks to verify the destination, it's already verified via your
+   Email Routing — if not, click the verification link it emails you once.)
+3. **Settings → Variables and Secrets** → add three plain text vars:
+   - `LEAD_TO` = `crcp183@gmail.com`
+   - `LEAD_FROM` = `leads@totalpropertysolution.net`
+   - `ALLOW_ORIGIN` = `https://totalpropertysolution.net`
+4. **(Recommended) Settings → Domains & Routes → Add** `lead.totalpropertysolution.net`.
+5. **Tell me the Worker URL** (the `lead.totalpropertysolution.net` one, or the
+   `tps-lead.<you>.workers.dev` one) and I'll set `window.TPS_LEAD_ENDPOINT` in
+   `assets/fresh.js` and push — every form then delivers silently to your inbox,
+   with the "opens your email app" method as automatic fallback if the Worker is
+   ever unreachable.
 
-2. **Deploy the Worker** (from this folder):
-   ```bash
-   cd worker
-   npx wrangler login              # opens Cloudflare in your browser, sign in
-   npx wrangler secret put RESEND_API_KEY   # paste the Resend key when prompted
-   npx wrangler deploy
-   ```
-   Wrangler prints a URL like `https://tps-lead.<your-subdomain>.workers.dev`.
-
-3. **(Recommended) Custom domain:** in the Cloudflare dashboard →
-   Workers & Pages → `tps-lead` → Settings → Domains & Routes → add
-   `lead.totalpropertysolution.net`.
-
-4. **Flip the site to the Worker:** in `assets/fresh.js`, set
-   ```js
-   window.TPS_LEAD_ENDPOINT = 'https://lead.totalpropertysolution.net';
-   ```
-   (or the workers.dev URL). Commit + push. Done — every form now delivers
-   silently to your inbox, with the "opens your email app" path as automatic
-   fallback if the Worker is ever unreachable.
+### CLI alternative (if you prefer the terminal)
+`wrangler.toml` is already configured with the send binding, so:
+```bash
+cd worker
+npx wrangler login
+npx wrangler deploy
+```
 
 ## Test it
 ```bash
@@ -51,7 +47,7 @@ curl -X POST https://lead.totalpropertysolution.net \
 You should get the email within seconds.
 
 ## What it does
-- Receives the form JSON, formats a clean email, sends via Resend to LEAD_TO.
-- Sets reply-to to the lead's email so you can reply straight to them.
-- Drops bot spam via a honeypot field.
+- Receives the form JSON, formats a clean HTML email, sends via Email Routing to LEAD_TO.
+- Sets Reply-To to the lead's email so you reply straight to them.
+- Drops bot spam via a honeypot field; requires a phone/email; caps field count/size.
 - CORS-locked to your domain.
