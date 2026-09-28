@@ -5,7 +5,7 @@
   // TPS_LEAD_ENDPOINT: when set to your Cloudflare Worker URL, forms POST there
   // and email you server-side (most reliable, works on every device). Until then,
   // forms open the visitor's own email app addressed directly to you.
-  var LEAD_EMAIL = 'crcp183@gmail.com';
+  var LEAD_EMAIL = 'bookings@totalpropertysolution.net'; // Cloudflare alias → owner inbox
   var LEAD_ENDPOINT = window.TPS_LEAD_ENDPOINT || null; // e.g. 'https://lead.totalpropertysolution.net'
 
   var toggle = document.querySelector('.nav-toggle');
@@ -63,7 +63,7 @@
     } else {
       note.style.background = 'var(--crit-soft, #f6e3df)';
       note.style.color = 'var(--crit, #b3402f)';
-      note.innerHTML = "Your email app should have opened. If it didn't, email us at <a href=\"mailto:" + LEAD_EMAIL + "\" style=\"color:inherit;text-decoration:underline\">" + LEAD_EMAIL + "</a> or call <a href=\"tel:+15189487156\" style=\"color:inherit;text-decoration:underline\">(518) 948-7156</a>.";
+      note.innerHTML = "Your email app should have opened with your request. If it didn't, email <a href=\"mailto:" + LEAD_EMAIL + "\" style=\"color:inherit;text-decoration:underline\">" + LEAD_EMAIL + "</a> or call <a href=\"tel:+15189487156\" style=\"color:inherit;text-decoration:underline\">(518) 948-7156</a>.";
     }
   }
 
