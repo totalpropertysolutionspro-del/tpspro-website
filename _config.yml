@@ -1,0 +1,11 @@
+# GitHub Pages build settings. These folders are internal tooling and must not be public.
+exclude:
+  - jarvis
+  - worker
+  - research
+  - netlify.toml
+  - README.md
+  - .claude
+  - .netlify
+include:
+  - CNAME
