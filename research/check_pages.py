@@ -67,7 +67,7 @@ def check(path):
     for tag in ('og:title', 'og:description', 'og:image', 'og:url', 'twitter:card'):
         if tag not in s: probs.append(f'missing {tag}')
     if 'G-0KM9JRJL2D' not in s: probs.append('missing GA tag')
-    if 'fresh.css?v=20260928c' not in s: probs.append('css link not versioned v=20260928c')
+    if 'fresh.css?v=20260928d' not in s: probs.append('css link not versioned v=20260928d')
     if 'class="sticky-cta"' not in s: probs.append('missing sticky CTA')
     if p.h1 != 1: probs.append(f'{p.h1} <h1> tags')
     for pat, why in BANNED:

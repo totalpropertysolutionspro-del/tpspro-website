@@ -9,8 +9,8 @@ Context reports (read the parts relevant to your pages):
 
 ## 1. The template (non-negotiable)
 `index.html` is the canonical template. Every page you touch must use, copied **verbatim** from index.html:
-- the `<head>` skeleton: charset, viewport, Google Fonts preconnect + stylesheet link, `assets/fresh.css?v=20260928c`, the GA4 gtag snippet (G-0KM9JRJL2D), favicon + apple-touch-icon.
-- the `.topbar`, `.header` (brand, nav, call block), `.footer`, `.sticky-cta` blocks, and `<script src="assets/fresh.js?v=20260928c" defer></script>` before `</body>`.
+- the `<head>` skeleton: charset, viewport, Google Fonts preconnect + stylesheet link, `assets/fresh.css?v=20260928d`, the GA4 gtag snippet (G-0KM9JRJL2D), favicon + apple-touch-icon.
+- the `.topbar`, `.header` (brand, nav, call block), `.footer`, `.sticky-cta` blocks, and `<script src="assets/fresh.js?v=20260928d" defer></script>` before `</body>`.
 - Only per-page differences allowed in chrome: add `aria-current="page"` to the matching nav link. Do NOT copy the `.season` strip (homepage only) and do NOT copy the jarvis:season markers.
 - Wrap page content in `<main id="main">…</main>`.
 

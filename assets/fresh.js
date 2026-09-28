@@ -6,7 +6,7 @@
   // and email you server-side (most reliable, works on every device). Until then,
   // forms open the visitor's own email app addressed directly to you.
   var LEAD_EMAIL = 'bookings@totalpropertysolution.net'; // Cloudflare alias → owner inbox
-  var LEAD_ENDPOINT = window.TPS_LEAD_ENDPOINT || null; // e.g. 'https://lead.totalpropertysolution.net'
+  var LEAD_ENDPOINT = window.TPS_LEAD_ENDPOINT || 'https://tps-lead.crcp183.workers.dev';
 
   var toggle = document.querySelector('.nav-toggle');
   var nav = document.getElementById('nav');
