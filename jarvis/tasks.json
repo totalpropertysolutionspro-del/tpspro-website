@@ -1,47 +1,19 @@
 {
-  "generatedAt": "2026-09-28T00:24:26.208Z",
+  "generatedAt": "2026-09-29T17:13:48.678Z",
   "tasks": [
     {
-      "page": "about.html",
+      "page": "404.html",
       "sev": "med",
-      "type": "meta",
-      "owner": "fixer",
-      "detail": "description 755 chars (band 100-170)"
-    },
-    {
-      "page": "faq.html",
-      "sev": "med",
-      "type": "meta",
-      "owner": "fixer",
-      "detail": "description 261 chars (band 100-170)"
-    },
-    {
-      "page": "index.html",
-      "sev": "med",
-      "type": "meta",
-      "owner": "fixer",
-      "detail": "description 310 chars (band 100-170)"
-    },
-    {
-      "page": "services.html",
-      "sev": "med",
-      "type": "meta",
-      "owner": "fixer",
-      "detail": "description 432 chars (band 100-170)"
+      "type": "orphan",
+      "owner": "human",
+      "detail": "no internal links point here"
     },
     {
       "page": "index.html",
       "sev": "med",
       "type": "content-depth",
       "owner": "content",
-      "detail": "~819 words vs field avg ~1339 — deepen with scope details, FAQs, local specifics"
-    },
-    {
-      "page": "index.html",
-      "sev": "low",
-      "type": "img-alt",
-      "owner": "human",
-      "detail": "1 <img> without alt"
+      "detail": "~813 words vs field avg ~1392 — deepen with scope details, FAQs, local specifics"
     }
   ]
 }
