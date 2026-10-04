@@ -1,0 +1,38 @@
+name: Claims guard
+
+# Blocks banned marketing claims (see jarvis/claims-policy.json) from being
+# published by anyone, including JARVIS. Fails the run and opens an issue.
+on:
+  push:
+    branches: [main]
+  pull_request: {}
+  schedule:
+    - cron: '30 11 * * *' # daily ~7:30am ET
+  workflow_dispatch: {}
+
+permissions:
+  contents: read
+  issues: write
+
+jobs:
+  guard:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+      - name: Check claims
+        id: check
+        run: |
+          set +e
+          node jarvis/claims-guard.mjs 2> guard.txt
+          echo "code=$?" >> "$GITHUB_OUTPUT"
+          cat guard.txt
+      - name: Open issue on violation
+        if: steps.check.outputs.code != '0'
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          gh issue create --title "Claims guard: banned claim published on the site" --body-file guard.txt || true
+          exit 1

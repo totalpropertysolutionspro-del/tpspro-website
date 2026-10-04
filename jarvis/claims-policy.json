@@ -1,0 +1,41 @@
+{
+  "_readme": "Claims policy for totalpropertysolution.net. Set by Miguel Medina on 2026-10-04. Nothing in this list may appear on the site, in any title or meta description, schema, blog post or generated copy, by a human or by JARVIS (autopilot, content, season rotator), until Miguel documents it as true and removes the rule himself. If a page violates a rule, fix the copy, never the rule.",
+  "rules": [
+    {
+      "id": "bonded",
+      "pattern": "\\bbonded\\b",
+      "reason": "No surety bond is on file. Say 'fully insured' (COI available before day one).",
+      "use_instead": "Fully insured"
+    },
+    {
+      "id": "since-2019",
+      "pattern": "(since|in|founded in|est\\.?)\\s+2019|\"foundingDate\"\\s*:\\s*\"2019\"|<b>2019</b>",
+      "reason": "Business began in 2010 as Commercial & Residential Cleaning Pro. The LLC was formed 2025.",
+      "use_instead": "Serving the Capital Region since 2010"
+    },
+    {
+      "id": "own-crews",
+      "pattern": "\\bown\\s+(in-house\\s+)?(crews?|people|team|employees|staff)\\b",
+      "reason": "Some work is done by contract workers. Do not claim all work is by employees.",
+      "use_instead": "trained, supervised crews"
+    },
+    {
+      "id": "no-subcontractors",
+      "pattern": "\\b(not|no|without|instead of|never)\\s+(a\\s+revolving\\s+door\\s+of\\s+)?sub-?contract",
+      "reason": "Do not claim zero subcontractors.",
+      "use_instead": "one point of contact, one contract"
+    },
+    {
+      "id": "in-house",
+      "pattern": "\\bin-house\\s+(crews?|maintenance|team|emergency|post-construction|floor|renovation)|\\b(we|our)\\s+(run|handle|do|perform)\\w*[^.<]{0,60}\\bin-house",
+      "reason": "In-house staffing is unverified.",
+      "use_instead": "our crews / our maintenance team"
+    },
+    {
+      "id": "background-checked-crews",
+      "pattern": "background-checked\\s+(crews?|cleaners|team)|(our|we)\\s+[^.<]{0,40}background[- ]check",
+      "reason": "Hold until Miguel confirms a documented background-check process.",
+      "use_instead": "trained, supervised crews"
+    }
+  ]
+}
