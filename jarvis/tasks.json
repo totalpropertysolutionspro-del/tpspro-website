@@ -1,6 +1,34 @@
 {
-  "generatedAt": "2026-10-13T18:38:25.035Z",
+  "generatedAt": "2026-10-20T15:59:41.548Z",
   "tasks": [
+    {
+      "page": "commercial-cleaning-albany-ny.html",
+      "sev": "med",
+      "type": "meta",
+      "owner": "fixer",
+      "detail": "title 79 chars (band 30-65)"
+    },
+    {
+      "page": "floor-care.html",
+      "sev": "med",
+      "type": "meta",
+      "owner": "fixer",
+      "detail": "title 74 chars (band 30-65)"
+    },
+    {
+      "page": "janitorial-services.html",
+      "sev": "med",
+      "type": "meta",
+      "owner": "fixer",
+      "detail": "title 76 chars (band 30-65)"
+    },
+    {
+      "page": "office-cleaning.html",
+      "sev": "med",
+      "type": "meta",
+      "owner": "fixer",
+      "detail": "title 74 chars (band 30-65)"
+    },
     {
       "page": "404.html",
       "sev": "med",
@@ -13,7 +41,7 @@
       "sev": "med",
       "type": "content-depth",
       "owner": "content",
-      "detail": "~806 words vs field avg ~1391 — deepen with scope details, FAQs, local specifics"
+      "detail": "~868 words vs field avg ~1406 — deepen with scope details, FAQs, local specifics"
     }
   ]
 }
